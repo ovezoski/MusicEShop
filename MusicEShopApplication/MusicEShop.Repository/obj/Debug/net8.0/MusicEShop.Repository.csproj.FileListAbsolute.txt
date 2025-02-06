@@ -13,3 +13,4 @@ C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\D
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\refint\MusicEShop.Repository.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\ref\MusicEShop.Repository.dll
+C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.sourcelink.json

@@ -160,3 +160,4 @@ C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Web\bin\Debug\ne
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Web\bin\Debug\net8.0\MusicEShop.Domain.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Web\bin\Debug\net8.0\MusicEShop.Repository.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Web\bin\Debug\net8.0\MusicEShop.Service.pdb
+C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Web\obj\Debug\net8.0\MusicEShop.Web.sourcelink.json

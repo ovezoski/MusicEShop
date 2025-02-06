@@ -12,8 +12,8 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250205221609_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20250206014615_addedModels")]
+    partial class addedModels
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -229,6 +229,107 @@ namespace MusicEShop.Repository.Migrations
                     b.HasIndex("TrackId");
 
                     b.ToTable("ArtistTracks");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Cart", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.CartItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AlbumId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CartId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("TrackId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("TrackId");
+
+                    b.ToTable("CartItems");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Order", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AlbumId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("TrackId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("TrackId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Playlist", b =>
@@ -449,6 +550,74 @@ namespace MusicEShop.Repository.Migrations
                     b.Navigation("Track");
                 });
 
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Cart", b =>
+                {
+                    b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.CartItem", b =>
+                {
+                    b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
+                        .WithMany()
+                        .HasForeignKey("AlbumId");
+
+                    b.HasOne("MusicEShop.Domain.DomainModels.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
+                        .WithMany()
+                        .HasForeignKey("TrackId");
+
+                    b.Navigation("Album");
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Track");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Order", b =>
+                {
+                    b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
+                {
+                    b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
+                        .WithMany()
+                        .HasForeignKey("AlbumId");
+
+                    b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
+                        .WithMany()
+                        .HasForeignKey("TrackId");
+
+                    b.Navigation("Album");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Track");
+                });
+
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Playlist", b =>
                 {
                     b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", "User")
@@ -500,6 +669,16 @@ namespace MusicEShop.Repository.Migrations
                     b.Navigation("Albums");
 
                     b.Navigation("ArtistTracks");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("MusicEShop.Domain.DomainModels.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Playlist", b =>
