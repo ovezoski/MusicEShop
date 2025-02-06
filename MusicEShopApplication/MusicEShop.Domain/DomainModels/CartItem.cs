@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class CartItem
+    public class CartItem : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
-
         public Guid CartId { get; set; }
         public Cart? Cart { get; set; }
 

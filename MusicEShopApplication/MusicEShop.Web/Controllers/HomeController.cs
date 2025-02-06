@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MusicEShop.Domain;
 
@@ -17,7 +18,6 @@ namespace MusicEShop.Web.Controllers
         {
             return View();
         }
-
         public IActionResult Privacy()
         {
             return View();

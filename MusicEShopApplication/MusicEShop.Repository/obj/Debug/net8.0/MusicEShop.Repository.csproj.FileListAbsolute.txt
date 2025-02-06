@@ -8,9 +8,9 @@ C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\D
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.AssemblyInfoInputs.cache
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.AssemblyInfo.cs
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.sourcelink.json
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicESh.DC7ACA92.Up2Date
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\refint\MusicEShop.Repository.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\ref\MusicEShop.Repository.dll
-C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Repository\obj\Debug\net8.0\MusicEShop.Repository.sourcelink.json

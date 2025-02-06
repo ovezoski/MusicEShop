@@ -131,7 +131,12 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<string>("RoleId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("MusicEShopUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("MusicEShopUserId");
 
                     b.HasIndex("RoleId");
 
@@ -240,7 +245,8 @@ namespace MusicEShop.Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Carts");
                 });
@@ -405,7 +411,6 @@ namespace MusicEShop.Repository.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -425,10 +430,6 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
@@ -495,6 +496,10 @@ namespace MusicEShop.Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
+                    b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", null)
+                        .WithMany("UserRoles")
+                        .HasForeignKey("MusicEShopUserId");
+
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
@@ -550,8 +555,8 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Cart", b =>
                 {
                     b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithOne("Cart")
+                        .HasForeignKey("MusicEShop.Domain.DomainModels.Cart", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -584,7 +589,7 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Order", b =>
                 {
                     b.HasOne("MusicEShop.Domain.Identity.MusicEShopUser", "User")
-                        .WithMany()
+                        .WithMany("Order")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -692,7 +697,14 @@ namespace MusicEShop.Repository.Migrations
 
             modelBuilder.Entity("MusicEShop.Domain.Identity.MusicEShopUser", b =>
                 {
+                    b.Navigation("Cart")
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
                     b.Navigation("Playlists");
+
+                    b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618
         }
