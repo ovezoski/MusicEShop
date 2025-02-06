@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class PlaylistTrack
+    public class PlaylistTrack : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid PlaylistId { get; set; }
         public Playlist? Playlist { get; set; }
 

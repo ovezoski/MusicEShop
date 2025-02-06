@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class Album
+    public class Album : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string? Title { get; set; }
         public string? Genre { get; set; }
         public DateTime? ReleaseDate { get; set; }

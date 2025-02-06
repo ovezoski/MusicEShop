@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class Track
+    public class Track : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string? Title { get; set; }
         public int? Duration { get; set; } // Duration in seconds
 

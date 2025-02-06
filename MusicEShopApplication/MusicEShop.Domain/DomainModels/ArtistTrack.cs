@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class ArtistTrack
+    public class ArtistTrack : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid ArtistId { get; set; }
         public Artist? Artist { get; set; }
 

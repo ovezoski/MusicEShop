@@ -8,10 +8,8 @@ using MusicEShop.Domain.Identity;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class Playlist
+    public class Playlist : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string? Name { get; set; }
 
         // Foreign Key for User (One-to-Many)

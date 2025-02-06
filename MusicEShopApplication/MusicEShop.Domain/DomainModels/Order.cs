@@ -9,11 +9,8 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class Order
+    public class Order : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
-
         public string UserId { get; set; }
         public MusicEShopUser? User { get; set; }
 

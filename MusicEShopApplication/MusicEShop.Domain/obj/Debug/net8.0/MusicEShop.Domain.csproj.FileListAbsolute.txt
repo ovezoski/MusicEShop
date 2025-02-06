@@ -6,8 +6,8 @@ C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.AssemblyInfoInputs.cache
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.AssemblyInfo.cs
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.sourcelink.json
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\refint\MusicEShop.Domain.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\ref\MusicEShop.Domain.dll
-C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.sourcelink.json
