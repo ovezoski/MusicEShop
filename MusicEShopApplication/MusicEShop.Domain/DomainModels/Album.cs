@@ -22,7 +22,7 @@ namespace MusicEShop.Domain.DomainModels
         public Artist? Artist { get; set; }
 
         // One-to-Many: Album → Tracks
-        public virtual ICollection<Track>? Tracks { get; set; }
+        public  ICollection<Track>? Tracks { get; set; }
 
     }
 }

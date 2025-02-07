@@ -3,16 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DBC561C-97C2-43EF-B373-BA83DDAB6E73}|MusicEShop.Repository\\MusicEShop.Repository.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBC561C-97C2-43EF-B373-BA83DDAB6E73}|MusicEShop.Repository\\MusicEShop.Repository.csproj|solutionrelative:musiceshop.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leonid\\AppData\\Local\\SourceServer\\4f020b33eb3a555dfbe6eac4dd8f21e28e087b92c8e634822c758cd191942eff\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\views\\tracks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\views\\tracks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\controllers\\trackscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\controllers\\trackscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\views\\tracks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\views\\tracks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\views\\tracks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -85,10 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08166BC3-3D02-42EC-9D44-369963142EA0}|MusicEShop.Domain\\MusicEShop.Domain.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.domain\\domainmodels\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08166BC3-3D02-42EC-9D44-369963142EA0}|MusicEShop.Domain\\MusicEShop.Domain.csproj|solutionrelative:musiceshop.domain\\domainmodels\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\leonid\\desktop\\musiceshop\\musiceshopapplication\\musiceshop.web\\views\\albums\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -210,37 +217,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
-              "RelativeToolTip": "MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T13:42:37.584Z",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MusicEShop.Repository\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MusicEShop.Repository\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T15:52:03.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
-              "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
-              "RelativeToolTip": "MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T13:40:33.11Z",
-              "EditorCaption": ""
+              "Title": "AlbumsController.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\AppData\\Local\\SourceServer\\4f020b33eb3a555dfbe6eac4dd8f21e28e087b92c8e634822c758cd191942eff\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\4f020b33eb3a555dfbe6eac4dd8f21e28e087b92c8e634822c758cd191942eff\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
+              "ToolTip": "C:\\Users\\Leonid\\AppData\\Local\\SourceServer\\4f020b33eb3a555dfbe6eac4dd8f21e28e087b92c8e634822c758cd191942eff\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\4f020b33eb3a555dfbe6eac4dd8f21e28e087b92c8e634822c758cd191942eff\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs [Read Only]",
+              "ViewState": "AgIAAEkAAAAAAAAAAAApwFkAAAARAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T15:50:23.135Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\_ViewImports.cshtml",
@@ -248,25 +255,24 @@
               "RelativeToolTip": "MusicEShop.Web\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T13:41:55.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T13:41:55.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TracksController.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\TracksController.cs",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\TracksController.cs",
-              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\TracksController.cs*",
-              "RelativeToolTip": "MusicEShop.Web\\Controllers\\TracksController.cs*",
-              "ViewState": "AgIAADoAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\TracksController.cs",
+              "RelativeToolTip": "MusicEShop.Web\\Controllers\\TracksController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowEYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T13:27:29.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "MusicEShop.Service.csproj",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\MusicEShop.Service.csproj",
               "RelativeDocumentMoniker": "MusicEShop.Service\\MusicEShop.Service.csproj",
@@ -274,12 +280,11 @@
               "RelativeToolTip": "MusicEShop.Service\\MusicEShop.Service.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-07T10:45:44.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T10:45:44.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Class1.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Class1.cs",
@@ -287,12 +292,37 @@
               "RelativeToolTip": "MusicEShop.Service\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:21:34.286Z",
+              "WhenOpened": "2025-02-07T09:21:34.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlbumsController.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
+              "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\AlbumsController.cs",
+              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs*",
+              "RelativeToolTip": "MusicEShop.Web\\Controllers\\AlbumsController.cs*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T09:07:47.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
+              "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
+              "RelativeToolTip": "MusicEShop.Web\\Views\\Tracks\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T13:40:33.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Album.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\Album.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\Album.cs",
@@ -300,12 +330,11 @@
               "RelativeToolTip": "MusicEShop.Domain\\DomainModels\\Album.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T02:59:00.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T02:59:00.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ArtistsController.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\ArtistsController.cs",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\ArtistsController.cs",
@@ -313,12 +342,23 @@
               "RelativeToolTip": "MusicEShop.Web\\Controllers\\ArtistsController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T10:29:45.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T10:29:45.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
+              "RelativeToolTip": "MusicEShop.Web\\Views\\Tracks\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T13:42:37.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MusicEShop.Repository.csproj",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\MusicEShop.Repository.csproj",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\MusicEShop.Repository.csproj",
@@ -326,12 +366,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\MusicEShop.Repository.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-07T09:23:36.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:23:36.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "TrackService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\TrackService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\TrackService.cs",
@@ -339,12 +378,11 @@
               "RelativeToolTip": "MusicEShop.Service\\Implementation\\TrackService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:36:58.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:36:58.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Shared\\_Layout.cshtml",
@@ -352,12 +390,11 @@
               "RelativeToolTip": "MusicEShop.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T09:18:31.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:18:31.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Implementation\\Repository.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Implementation\\Repository.cs",
@@ -365,12 +402,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\Implementation\\Repository.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAYwCgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T13:22:42.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T13:22:42.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ITrackService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\ITrackService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\ITrackService.cs",
@@ -378,12 +414,11 @@
               "RelativeToolTip": "MusicEShop.Service\\Interface\\ITrackService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:06:20.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:06:20.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ArtistRepository.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Implementation\\ArtistRepository.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Implementation\\ArtistRepository.cs",
@@ -391,12 +426,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\Implementation\\ArtistRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:06:29.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:06:29.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Implementation\\OrderRepository.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Implementation\\OrderRepository.cs",
@@ -404,12 +438,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\Implementation\\OrderRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T13:22:17.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T13:22:17.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "AlbumRepository.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Implementation\\AlbumRepository.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Implementation\\AlbumRepository.cs",
@@ -417,12 +450,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\Implementation\\AlbumRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:12:25.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:12:25.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "AlbumService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\AlbumService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\AlbumService.cs",
@@ -430,12 +462,11 @@
               "RelativeToolTip": "MusicEShop.Service\\Implementation\\AlbumService.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwDMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:09:09.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:09:09.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ArtistService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\ArtistService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\ArtistService.cs",
@@ -443,12 +474,11 @@
               "RelativeToolTip": "MusicEShop.Service\\Implementation\\ArtistService.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAkwBUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:06:22.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:06:22.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "IArtistRepository.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Interface\\IArtistRepository.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Interface\\IArtistRepository.cs",
@@ -456,25 +486,11 @@
               "RelativeToolTip": "MusicEShop.Repository\\Interface\\IArtistRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T13:18:19.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T13:18:19.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AlbumsController.cs",
-              "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "ToolTip": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "RelativeToolTip": "MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAUwE8AAABtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T09:07:47.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "MusicEShop.Web\\ScaffoldingReadMe.txt",
@@ -486,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Albums\\Index.cshtml",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Albums\\Index.cshtml",
@@ -494,12 +510,11 @@
               "RelativeToolTip": "MusicEShop.Web\\Views\\Albums\\Index.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAgwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T10:52:35.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T10:52:35.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\appsettings.json",
               "RelativeDocumentMoniker": "MusicEShop.Web\\appsettings.json",
@@ -511,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Track.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\Track.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\Track.cs",
@@ -519,12 +534,11 @@
               "RelativeToolTip": "MusicEShop.Domain\\DomainModels\\Track.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T02:59:08.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T02:59:08.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Program.cs",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Program.cs",
@@ -536,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Albums\\Create.cshtml",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Albums\\Create.cshtml",
@@ -548,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Views\\Albums\\Details.cshtml",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Views\\Albums\\Details.cshtml",
@@ -560,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "MusicEShop.Web\\wwwroot\\css\\site.css",
@@ -572,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "MusicEShop.Web\\wwwroot\\js\\site.js",
@@ -584,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "IArtistService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\IArtistService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\IArtistService.cs",
@@ -596,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Artist.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\Artist.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\Artist.cs",
@@ -608,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ArtistTrack.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\ArtistTrack.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\ArtistTrack.cs",
@@ -620,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\BaseEntity.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\BaseEntity.cs",
@@ -632,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\CartService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\CartService.cs",
@@ -644,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "CartDTO.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DTO\\CartDTO.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DTO\\CartDTO.cs",
@@ -656,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\ICartService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\ICartService.cs",
@@ -668,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "PlaylistTrack.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\PlaylistTrack.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\PlaylistTrack.cs",
@@ -680,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\HomeController.cs",
@@ -692,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\CartItem.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\CartItem.cs",
@@ -704,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\OrderService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\OrderService.cs",
@@ -716,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "CartItemDTO.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DTO\\CartItemDTO.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DTO\\CartItemDTO.cs",
@@ -728,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Implementation\\EmailService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Implementation\\EmailService.cs",
@@ -740,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Domain\\DomainModels\\OrderItem.cs",
               "RelativeDocumentMoniker": "MusicEShop.Domain\\DomainModels\\OrderItem.cs",
@@ -752,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "IAlbumService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\IAlbumService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\IAlbumService.cs",
@@ -764,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\IOrderService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\IOrderService.cs",
@@ -776,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "MusicEShop.Web.csproj",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\MusicEShop.Web.csproj",
               "RelativeDocumentMoniker": "MusicEShop.Web\\MusicEShop.Web.csproj",
@@ -784,12 +798,11 @@
               "RelativeToolTip": "MusicEShop.Web\\MusicEShop.Web.csproj",
               "ViewState": "AgIAAAcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-07T09:21:43.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T09:21:43.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Service\\Interface\\IEmailService.cs",
               "RelativeDocumentMoniker": "MusicEShop.Service\\Interface\\IEmailService.cs",
@@ -801,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "20250207090515_first-pull.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250207090515_first-pull.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Migrations\\20250207090515_first-pull.cs",
@@ -813,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "20250207025941_test1.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250207025941_test1.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Migrations\\20250207025941_test1.cs",
@@ -825,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "20250207025822_test.cs",
               "DocumentMoniker": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250207025822_test.cs",
               "RelativeDocumentMoniker": "MusicEShop.Repository\\Migrations\\20250207025822_test.cs",
