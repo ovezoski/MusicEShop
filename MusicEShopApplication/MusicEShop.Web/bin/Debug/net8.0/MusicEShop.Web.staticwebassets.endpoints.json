@@ -2469,8 +2469,8 @@
       ]
     },
     {
-      "Route": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
-      "AssetFile": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
+      "Route": "img/Blonde-Frank Ocean.jpg",
+      "AssetFile": "img/Blonde-Frank Ocean.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2495,7 +2495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 11:58:45 GMT"
+          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2506,8 +2506,8 @@
       ]
     },
     {
-      "Route": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.q3mfio54r7.jpg",
-      "AssetFile": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
+      "Route": "img/Blonde-Frank Ocean.q3mfio54r7.jpg",
+      "AssetFile": "img/Blonde-Frank Ocean.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2532,7 +2532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 11:58:45 GMT"
+          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2546,7 +2546,7 @@
         },
         {
           "Name": "label",
-          "Value": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg"
+          "Value": "img/Blonde-Frank Ocean.jpg"
         }
       ]
     },

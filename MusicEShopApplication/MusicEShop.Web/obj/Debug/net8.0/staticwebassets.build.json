@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VqJNpF4g5yVh44+szhSMElRAxPJngABQScd1o3YXCNY=",
+  "Hash": "f3uNA3KzOBQlVZdqzThbu+V8qMWNq8AEddV8eG9ozVw=",
   "Source": "MusicEShop.Web",
   "BasePath": "_content/MusicEShop.Web",
   "Mode": "Default",
@@ -1361,12 +1361,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
+      "Identity": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
       "SourceId": "MusicEShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
       "BasePath": "_content/MusicEShop.Web",
-      "RelativePath": "img/Blonde-MusicEShop.Domain.DomainModels.Artist#[.{fingerprint}]?.jpg",
+      "RelativePath": "img/Blonde-Frank Ocean#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1379,7 +1379,7 @@
       "Integrity": "WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Blonde-MusicEShop.Domain.DomainModels.Artist.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\Blonde-Frank Ocean.jpg"
     },
     {
       "Identity": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
@@ -4986,8 +4986,8 @@
       ]
     },
     {
-      "Route": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
-      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
+      "Route": "img/Blonde-Frank Ocean.jpg",
+      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5008,7 +5008,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 11:58:45 GMT"
+          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5023,8 +5023,8 @@
       ]
     },
     {
-      "Route": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.q3mfio54r7.jpg",
-      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-MusicEShop.Domain.DomainModels.Artist.jpg",
+      "Route": "img/Blonde-Frank Ocean.q3mfio54r7.jpg",
+      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5045,7 +5045,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 11:58:45 GMT"
+          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5059,7 +5059,7 @@
         },
         {
           "Name": "label",
-          "Value": "img/Blonde-MusicEShop.Domain.DomainModels.Artist.jpg"
+          "Value": "img/Blonde-Frank Ocean.jpg"
         },
         {
           "Name": "integrity",
