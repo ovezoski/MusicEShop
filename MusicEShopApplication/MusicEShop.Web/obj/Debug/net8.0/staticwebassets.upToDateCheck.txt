@@ -1,7 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\background-image.jpeg
 wwwroot\img\Blonde-Frank Ocean.jpg
 wwwroot\img\Dark Side of The Moon-Pink Floyd.jpg
+wwwroot\img\shop-bg.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
