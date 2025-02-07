@@ -11,3 +11,16 @@ C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\refint\MusicEShop.Domain.dll
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.pdb
 C:\Users\pc\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\ref\MusicEShop.Domain.dll
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\bin\Debug\net8.0\MusicEShop.Domain.deps.json
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\bin\Debug\net8.0\MusicEShop.Domain.dll
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\bin\Debug\net8.0\MusicEShop.Domain.pdb
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.csproj.AssemblyReference.cache
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.AssemblyInfoInputs.cache
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.AssemblyInfo.cs
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.sourcelink.json
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.dll
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\refint\MusicEShop.Domain.dll
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\MusicEShop.Domain.pdb
+C:\Users\Leonid\Desktop\MusicEShop\MusicEShopApplication\MusicEShop.Domain\obj\Debug\net8.0\ref\MusicEShop.Domain.dll
