@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using MusicEShop.Domain.Identity;
 using MusicEShop.Repository.Interface;
 using System;
@@ -21,29 +22,61 @@ namespace MusicEShop.Repository.Implementation
             entities = context.Set<MusicEShopUser>();
         }
 
-        public void Delete(MusicEShopUser entity)
+        public void AssignRole(MusicEShopUser user, string roleName)
         {
             throw new NotImplementedException();
+        }
+
+        public void Delete(MusicEShopUser entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            entities.Remove(entity);
+            context.SaveChanges();
+        }
+
+        public MusicEShopUser? Get(string? id)
+        {
+            return entities
+                .Include(z => z.Cart)
+                .ThenInclude(c => c.CartItems!)
+                .ThenInclude(ci => ci.Track)
+                .Include(z => z.Cart)
+                .ThenInclude(c => c.CartItems!)
+                .ThenInclude(ci => ci.Album)
+                .SingleOrDefault(s => s.Id == id);
         }
 
         public IEnumerable<MusicEShopUser> GetAll()
         {
-            throw new NotImplementedException();
+            return entities.AsEnumerable();
         }
 
-        public MusicEShopUser GetById(string? id)
+        public IEnumerable<string> GetUserRoles(MusicEShopUser user)
         {
             throw new NotImplementedException();
         }
 
         public void Insert(MusicEShopUser entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            entities.Add(entity);
+            context.SaveChanges();
         }
 
         public void Update(MusicEShopUser entity)
         {
-            throw new NotImplementedException();
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            entities.Update(entity);
+            context.SaveChanges();
         }
     }
 }
