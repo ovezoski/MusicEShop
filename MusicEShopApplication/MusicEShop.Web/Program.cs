@@ -4,6 +4,8 @@ using MusicEShop.Domain.Identity;
 using MusicEShop.Repository;
 using MusicEShop.Repository.Implementation;
 using MusicEShop.Repository.Interface;
+using MusicEShop.Service.Implementation;
+using MusicEShop.Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,13 @@ builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 builder.Services.AddScoped<IArtistRepository, ArtistRepository>();
 builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
+builder.Services.AddScoped <IAlbumService,AlbumService>();
+builder.Services.AddScoped<IArtistService, ArtistService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ITrackService, TrackService>();
 
 var app = builder.Build();
 
@@ -61,6 +70,7 @@ using(var scope = app.Services.CreateScope())
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 }
+//??
 
 using (var scope = app.Services.CreateScope())
 {
