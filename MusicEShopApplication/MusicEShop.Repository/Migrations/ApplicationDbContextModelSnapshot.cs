@@ -179,6 +179,9 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<DateTime?>("ReleaseDate")
                         .HasColumnType("datetime2");
 
@@ -387,6 +390,9 @@ namespace MusicEShop.Repository.Migrations
 
                     b.Property<int?>("Duration")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");

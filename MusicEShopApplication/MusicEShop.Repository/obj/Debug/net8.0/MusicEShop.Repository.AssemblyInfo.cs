@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MusicEShop.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df923c53bba0141c8feef537cf0b2cf41fafd440")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b285686e27b476022039110e4e0bf96753c7557d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MusicEShop.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MusicEShop.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

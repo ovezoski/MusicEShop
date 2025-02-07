@@ -10,9 +10,11 @@ namespace MusicEShop.Repository.Interface
     public interface IUserRepository
     {
         IEnumerable<MusicEShopUser> GetAll();
-        MusicEShopUser GetById(string? id);
+        MusicEShopUser Get(string? id);
         void Insert(MusicEShopUser entity);
         void Update(MusicEShopUser entity);
         void Delete(MusicEShopUser entity);
+        void AssignRole(MusicEShopUser user, string roleName);
+        IEnumerable<string> GetUserRoles(MusicEShopUser user);
     }
 }
