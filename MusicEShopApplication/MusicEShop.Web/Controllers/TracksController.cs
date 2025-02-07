@@ -25,8 +25,14 @@ namespace MusicEShop.Web.Controllers
         // GET: Tracks
         public IActionResult Index()
         {
+
+            var tracks=_trackService.GetAllTracks();
+            foreach (var track in tracks)
+            {
+                track.Album=_albumService.GetAlbumById(track.AlbumId);
+            }
             
-            return View(_trackService.GetAllTracks());
+            return View(tracks);
         }
 
         // GET: Tracks/Details/5

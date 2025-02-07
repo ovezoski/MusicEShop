@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q3mfio54r7"},{"Name":"integrity","Value":"sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="},{"Name":"label","Value":"_content/MusicEShop.Web/img/Blonde-Frank Ocean.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3682"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 12:00:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Dark Side of The Moon-Pink Floyd.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Dark Side of The Moon-Pink Floyd.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3580"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 15:55:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Dark Side of The Moon-Pink Floyd.mn87gax1vi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Dark Side of The Moon-Pink Floyd.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mn87gax1vi"},{"Name":"integrity","Value":"sha256-ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc="},{"Name":"label","Value":"_content/MusicEShop.Web/img/Dark Side of The Moon-Pink Floyd.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3580"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 15:55:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

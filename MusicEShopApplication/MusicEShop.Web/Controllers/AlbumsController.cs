@@ -30,7 +30,13 @@ namespace MusicEShop.Web.Controllers
         // GET: Albums
         public IActionResult Index()
         {
-            return View(_albumService.GetAllAlbums());
+            var albums = _albumService.GetAllAlbums();
+            foreach (var album in albums)
+            {
+                album.Artist = _artistService.GetArtistById(album.ArtistId);
+            }
+
+            return View(albums);
         }
 
         // GET: Albums/Details/5
@@ -88,7 +94,6 @@ namespace MusicEShop.Web.Controllers
 
                     album.CoverImage = "/img/" + uniqueFileName;
                 }
-
                 _albumService.CreateAlbum(album);
 
                 return RedirectToAction(nameof(Index));

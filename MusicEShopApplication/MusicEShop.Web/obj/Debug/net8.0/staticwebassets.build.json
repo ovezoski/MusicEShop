@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f3uNA3KzOBQlVZdqzThbu+V8qMWNq8AEddV8eG9ozVw=",
+  "Hash": "vNdNv+xrnDdRW9gMcOoD5mmA3vVROm5aZ/h83y3gJfI=",
   "Source": "MusicEShop.Web",
   "BasePath": "_content/MusicEShop.Web",
   "Mode": "Default",
@@ -1380,6 +1380,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Blonde-Frank Ocean.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/Dark Side of The Moon-Pink Floyd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mn87gax1vi",
+      "Integrity": "ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg"
     },
     {
       "Identity": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
@@ -5064,6 +5085,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Dark Side of The Moon-Pink Floyd.jpg",
+      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3580"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc="
+        }
+      ]
+    },
+    {
+      "Route": "img/Dark Side of The Moon-Pink Floyd.mn87gax1vi.jpg",
+      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3580"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mn87gax1vi"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Dark Side of The Moon-Pink Floyd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc="
         }
       ]
     },

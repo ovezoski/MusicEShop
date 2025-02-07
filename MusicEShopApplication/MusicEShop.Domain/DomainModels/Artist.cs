@@ -14,7 +14,7 @@ namespace MusicEShop.Domain.DomainModels
         public string? Genre { get; set; }
 
         // One-to-Many: Artist → Albums
-        public virtual ICollection<Album>? Albums { get; set; }
+        public  ICollection<Album>? Albums { get; set; }
 
         // Many-to-Many: Artist ↔ Tracks
         public virtual ICollection<ArtistTrack>? ArtistTracks { get; set; }

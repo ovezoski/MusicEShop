@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\Blonde-Frank Ocean.jpg"
     },
     {
+      "Id": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg",
+      "PackagePath": "staticwebassets\\img\\Dark Side of The Moon-Pink Floyd.jpg"
+    },
+    {
       "Id": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
