@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ using MusicEShop.Service.Interface;
 
 namespace MusicEShop.Web.Controllers
 {
+    [Authorize]
     public class AlbumsController : Controller
     {
         private readonly IAlbumService _albumService;
@@ -51,6 +53,7 @@ namespace MusicEShop.Web.Controllers
             }
 
             var album = _albumService.GetAlbumById(id);
+
             if (album == null)
             {
                 return NotFound();
@@ -60,6 +63,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Albums/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Name");
@@ -69,9 +73,10 @@ namespace MusicEShop.Web.Controllers
         // POST: Albums/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title,Genre,ReleaseDate,coverImage,Price,ArtistId,Id")] Album album, IFormFile coverImage)
+        public IActionResult Create([Bind("Title,Genre,Details,ReleaseDate,coverImage,Price,ArtistId,Id")] Album album, IFormFile coverImage)
         {
             if (ModelState.IsValid)
             {
@@ -107,6 +112,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Albums/Edit/5
+        [Authorize(Roles = "Admin")]
         public IActionResult  Edit(Guid id)
         {
             if (id == null)
@@ -119,7 +125,7 @@ namespace MusicEShop.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Id", album.ArtistId);
+            ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Name", album.ArtistId);
             return View(album);
         }
 
@@ -128,7 +134,8 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Title,Genre,ReleaseDate,Price,CoverImage,ArtistId,Id")] Album album)
+        [Authorize(Roles = "Admin")]
+        public IActionResult Edit(Guid id, [Bind("Title,Genre,Details,ReleaseDate,Price,CoverImage,ArtistId,Id")] Album album)
         {
             if (id != album.Id)
             {
@@ -154,11 +161,12 @@ namespace MusicEShop.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Id", album.ArtistId);
+            ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Name", album.ArtistId);
             return View(album);
         }
 
         // GET: Albums/Delete/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(Guid id)
         {
             if (id == null)
@@ -171,11 +179,11 @@ namespace MusicEShop.Web.Controllers
             {
                 return NotFound();
             }
-
             return View(album);
         }
 
         // POST: Albums/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(Guid id)
@@ -190,9 +198,14 @@ namespace MusicEShop.Web.Controllers
         }
         public IActionResult ListAlbumsByArtist(Guid artistId)
         {
-            var artists= _artistService.GetAllArtists();
-            var allAlbumsByArtists = artists.FindAll(i => i.Albums.All(a => a.ArtistId.Equals(artistId)));
-            return View(allAlbumsByArtists);
+            var albums = _albumService.GetAlbumsByArtist(artistId);
+
+            if (albums == null || !albums.Any())
+            {
+                return NotFound("No albums found for this artist.");
+            }
+
+            return View(albums);
         }
 
         public IActionResult AddToCart(Guid id)

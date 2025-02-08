@@ -11,11 +11,37 @@ namespace MusicEShop.Repository.Implementation
 {
     public class AlbumRepository : Repository<Album>, IAlbumRepository
     {
-        public AlbumRepository(ApplicationDbContext context) : base(context) { }
+        private readonly ApplicationDbContext context;
+        private DbSet<Album> entities;
+
+        public AlbumRepository(ApplicationDbContext context) : base(context)
+        {
+            this.context = context;
+            entities = context.Set<Album>();
+        }
+        public List<Album> GetAllAlbums()
+        {
+            return entities
+                .Include(a => a.Artist)
+                .Include(a => a.Tracks!)
+                .ToList();
+        }
+
+        public Album? GetAlbumById(Guid id)
+        {
+            return entities
+                .Include(a => a.Artist)
+                .Include(a => a.Tracks!)
+                .SingleOrDefault(a => a.Id == id);
+        }
 
         public List<Album> GetAlbumsByArtistId(Guid artistId)
         {
-            return context.Albums.Where(a => a.ArtistId == artistId).ToList();
+            return entities
+                .Include(a => a.Artist)  
+                .Include(a => a.Tracks!) 
+                .Where(a => a.ArtistId == artistId)
+                .ToList();
         }
     }
 }

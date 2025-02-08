@@ -12,6 +12,9 @@ namespace MusicEShop.Domain.DomainModels
     {
         public string? Title { get; set; }
         public string? Genre { get; set; }
+        public string? Details { get; set; }
+
+        [DataType(DataType.Date)]
         public DateTime? ReleaseDate { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
