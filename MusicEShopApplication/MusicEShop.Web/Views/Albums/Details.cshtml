@@ -1,54 +1,61 @@
 ﻿@model MusicEShop.Domain.DomainModels.Album
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Album Details";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="@Model.CoverImage" alt="Album Cover" class="img-fluid rounded shadow" style="max-width: 100%;">
+        </div>
 
-<div>
-    <h4>Album</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CoverImage)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CoverImage)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Artist)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Artist.Id)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+        <div class="col-md-8">
+            <h2 class="mb-3">@Model.Title</h2>
+            <p><strong>Artist:</strong> @Model.Artist?.Name</p>
+            <p><strong>Genre:</strong> @Model.Genre</p>
+            <p><strong>Price:</strong> $@Model.Price</p>
+
+            <form asp-action="AddToCart" asp-route-id="@Model.Id" method="post">
+                <button type="submit" class="btn btn-primary mt-2">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <h4>Description</h4>
+            <p>@Model.Details</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <h4>Tracks</h4>
+            <ul class="list-group">
+                @foreach (var track in Model.Tracks)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>@track.Title</strong>
+                            <span class="text-muted">(@track.Duration mins)</span>
+                        </div>
+                        <span class="badge bg-secondary">$@track.Price</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Edit" class="btn btn-outline-secondary" asp-route-id="@Model?.Id">Edit</a>
+            }
+        </div>
+    </div>
 </div>

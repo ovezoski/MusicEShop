@@ -8,7 +8,11 @@
 
 <div class="container">
     <div class="m-3">
-        <a class="btn btn-success" asp-action="Create">Create New Album</a>
+        @if (User.IsInRole("Admin"))
+        {
+            <a class="btn btn-success" asp-action="Create">Create New Album</a>
+        }
+
     </div>
 
     @for (int i = 0; i < Model.Count(); i++)
@@ -30,9 +34,14 @@
                     <h6><strong>Price:</strong> $@item.Price</h6>
                 </div>
                 <div class="card-footer">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm" style="background-color: midnightblue; color: white; border: none;">Edit</a>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm" style="background-color: midnightblue; color: white; border: none;">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm "style="background-color: darkred; color: white; border: none;">Delete</a>
+                    }
+                    
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm" style="background-color: darkolivegreen; color: white; border: none;">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm "style="background-color: darkred; color: white; border: none;">Delete</a>
+                    
                 </div>
             </div>
         </div>

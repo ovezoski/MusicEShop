@@ -3,7 +3,15 @@ wwwroot\favicon.ico
 wwwroot\img\background-image.jpeg
 wwwroot\img\Blonde-Frank Ocean.jpg
 wwwroot\img\Dark Side of The Moon-Pink Floyd.jpg
+wwwroot\img\ddd-bisera artist.jpg
+wwwroot\img\dggdgdd-HEHE.jpg
+wwwroot\img\dswwdd-bisera artist.png
+wwwroot\img\fff-bisera artist.png
+wwwroot\img\gggg-bisera artist.png
+wwwroot\img\gggg-plsArtistName.jpg
+wwwroot\img\Pretty Hate Machine-plsArtistName.png
 wwwroot\img\shop-bg.jpg
+wwwroot\img\testalbum-HEHE.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

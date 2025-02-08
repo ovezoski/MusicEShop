@@ -11,9 +11,9 @@ namespace MusicEShop.Service.Implementation
 {
     public class AlbumService : IAlbumService
     {
-        private readonly IRepository<Album> _albumRepository;
+        private readonly IAlbumRepository _albumRepository;
 
-        public AlbumService(IRepository<Album> albumRepository)
+        public AlbumService(IAlbumRepository albumRepository)
         {
             _albumRepository = albumRepository;
         }
@@ -25,28 +25,24 @@ namespace MusicEShop.Service.Implementation
 
         public void DeleteAlbum(Guid id)
         {
-            var album = _albumRepository.GetById(id);
+            var album = _albumRepository.GetAlbumById(id);
             _albumRepository.Delete(album);
         }
 
         public Album GetAlbumById(Guid id)
         {
-            var album = _albumRepository.GetById(id);
+            var album = _albumRepository.GetAlbumById(id);
             return album;
         }
 
         public List<Album> GetAlbumsByArtist(Guid artistId)
         {
-            var allAlbums = _albumRepository.GetAll();
-
-            var albumsByArtist = allAlbums.Where(album => album.ArtistId == artistId).ToList();
-
-            return albumsByArtist;
+            return _albumRepository.GetAlbumsByArtistId(artistId);
         }
 
         public List<Album> GetAllAlbums()
         {
-            return _albumRepository.GetAll().ToList();
+            return _albumRepository.GetAllAlbums().ToList();
         }
 
         public void UpdateAlbum(Album album)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "axqK1JlCZ4f+sJwz93NH6NrYxLp982265YdCYSSF+D0=",
+  "Hash": "V2kJwZi1tSii8uxz9cTEte5oqb0FoOpraobGbIBnPRk=",
   "Source": "MusicEShop.Web",
   "BasePath": "_content/MusicEShop.Web",
   "Mode": "Default",
@@ -1424,6 +1424,153 @@
       "OriginalItemSpec": "wwwroot\\img\\Dark Side of The Moon-Pink Floyd.jpg"
     },
     {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\ddd-bisera artist.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/ddd-bisera artist#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "om8mx1p5y5",
+      "Integrity": "0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH+shuIIhY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ddd-bisera artist.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dggdgdd-HEHE.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/dggdgdd-HEHE#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1pxl5c30of",
+      "Integrity": "K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\dggdgdd-HEHE.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dswwdd-bisera artist.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/dswwdd-bisera artist#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwukcniakw",
+      "Integrity": "lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\dswwdd-bisera artist.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\fff-bisera artist.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/fff-bisera artist#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwukcniakw",
+      "Integrity": "lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\fff-bisera artist.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-bisera artist.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/gggg-bisera artist#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "us9510i251",
+      "Integrity": "3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\gggg-bisera artist.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-plsArtistName.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/gggg-plsArtistName#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1pxl5c30of",
+      "Integrity": "K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\gggg-plsArtistName.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Pretty Hate Machine-plsArtistName.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/Pretty Hate Machine-plsArtistName#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhs2blxah4",
+      "Integrity": "w+tbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Pretty Hate Machine-plsArtistName.png"
+    },
+    {
       "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\shop-bg.jpg",
       "SourceId": "MusicEShop.Web",
       "SourceType": "Discovered",
@@ -1443,6 +1590,27 @@
       "CopyToOutputDirectory": "Always",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\shop-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\testalbum-HEHE.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/testalbum-HEHE#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "us9510i251",
+      "Integrity": "3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\testalbum-HEHE.png"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
@@ -5295,6 +5463,580 @@
       ]
     },
     {
+      "Route": "img/ddd-bisera artist.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\ddd-bisera artist.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1981080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH+shuIIhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:58:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH+shuIIhY="
+        }
+      ]
+    },
+    {
+      "Route": "img/ddd-bisera artist.om8mx1p5y5.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\ddd-bisera artist.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1981080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH+shuIIhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:58:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "om8mx1p5y5"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ddd-bisera artist.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH+shuIIhY="
+        }
+      ]
+    },
+    {
+      "Route": "img/dggdgdd-HEHE.1pxl5c30of.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dggdgdd-HEHE.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:39:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pxl5c30of"
+        },
+        {
+          "Name": "label",
+          "Value": "img/dggdgdd-HEHE.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="
+        }
+      ]
+    },
+    {
+      "Route": "img/dggdgdd-HEHE.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dggdgdd-HEHE.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:39:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="
+        }
+      ]
+    },
+    {
+      "Route": "img/dswwdd-bisera artist.cwukcniakw.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dswwdd-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "916229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:59:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwukcniakw"
+        },
+        {
+          "Name": "label",
+          "Value": "img/dswwdd-bisera artist.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k="
+        }
+      ]
+    },
+    {
+      "Route": "img/dswwdd-bisera artist.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\dswwdd-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "916229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:59:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k="
+        }
+      ]
+    },
+    {
+      "Route": "img/fff-bisera artist.cwukcniakw.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\fff-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "916229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:59:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwukcniakw"
+        },
+        {
+          "Name": "label",
+          "Value": "img/fff-bisera artist.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k="
+        }
+      ]
+    },
+    {
+      "Route": "img/fff-bisera artist.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\fff-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "916229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:59:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k="
+        }
+      ]
+    },
+    {
+      "Route": "img/gggg-bisera artist.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:57:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="
+        }
+      ]
+    },
+    {
+      "Route": "img/gggg-bisera artist.us9510i251.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-bisera artist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 17:57:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "us9510i251"
+        },
+        {
+          "Name": "label",
+          "Value": "img/gggg-bisera artist.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="
+        }
+      ]
+    },
+    {
+      "Route": "img/gggg-plsArtistName.1pxl5c30of.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-plsArtistName.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pxl5c30of"
+        },
+        {
+          "Name": "label",
+          "Value": "img/gggg-plsArtistName.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="
+        }
+      ]
+    },
+    {
+      "Route": "img/gggg-plsArtistName.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\gggg-plsArtistName.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="
+        }
+      ]
+    },
+    {
+      "Route": "img/Pretty Hate Machine-plsArtistName.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Pretty Hate Machine-plsArtistName.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+tbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:59:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w+tbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Pretty Hate Machine-plsArtistName.vhs2blxah4.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Pretty Hate Machine-plsArtistName.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+tbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:59:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhs2blxah4"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Pretty Hate Machine-plsArtistName.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w+tbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8="
+        }
+      ]
+    },
+    {
       "Route": "img/shop-bg.b3zymi5b06.jpg",
       "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\shop-bg.jpg",
       "Selectors": [],
@@ -5373,6 +6115,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-2atz10DHl2iGh8lEXT4TS1KcxQOwjjrg3KrW8CR9LjU="
+        }
+      ]
+    },
+    {
+      "Route": "img/testalbum-HEHE.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\testalbum-HEHE.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="
+        }
+      ]
+    },
+    {
+      "Route": "img/testalbum-HEHE.us9510i251.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\testalbum-HEHE.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "us9510i251"
+        },
+        {
+          "Name": "label",
+          "Value": "img/testalbum-HEHE.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="
         }
       ]
     },

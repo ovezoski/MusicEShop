@@ -10,5 +10,8 @@ namespace MusicEShop.Repository.Interface
     public interface IAlbumRepository : IRepository<Album>
     {
         List<Album> GetAlbumsByArtistId(System.Guid artistId);
+        List<Album> GetAllAlbums();
+        Album? GetAlbumById(Guid id);
+
     }
 }

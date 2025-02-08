@@ -60,6 +60,90 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mn87gax1vi"},{"Name":"integrity","Value":"sha256-ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc="},{"Name":"label","Value":"_content/MusicEShop.Web/img/Dark Side of The Moon-Pink Floyd.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3580"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ku//YfwiWns30ZPJdwX5XTZ1axfNDErFkbKh/HDRSYc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 16:34:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/ddd-bisera artist.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\ddd-bisera artist.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH\u002BshuIIhY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1981080"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH\u002BshuIIhY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:58:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/ddd-bisera artist.om8mx1p5y5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\ddd-bisera artist.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"om8mx1p5y5"},{"Name":"integrity","Value":"sha256-0PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH\u002BshuIIhY="},{"Name":"label","Value":"_content/MusicEShop.Web/img/ddd-bisera artist.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1981080"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220PWR3U8jBSvcgnOwhN2CTJHj6ueLsc2jYYH\u002BshuIIhY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:58:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/dggdgdd-HEHE.1pxl5c30of.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dggdgdd-HEHE.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1pxl5c30of"},{"Name":"integrity","Value":"sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="},{"Name":"label","Value":"_content/MusicEShop.Web/img/dggdgdd-HEHE.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"501850"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:39:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/dggdgdd-HEHE.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dggdgdd-HEHE.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"501850"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:39:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/dswwdd-bisera artist.cwukcniakw.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dswwdd-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cwukcniakw"},{"Name":"integrity","Value":"sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k="},{"Name":"label","Value":"_content/MusicEShop.Web/img/dswwdd-bisera artist.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"916229"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:59:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/dswwdd-bisera artist.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dswwdd-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"916229"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:59:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/fff-bisera artist.cwukcniakw.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fff-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cwukcniakw"},{"Name":"integrity","Value":"sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k="},{"Name":"label","Value":"_content/MusicEShop.Web/img/fff-bisera artist.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"916229"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:59:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/fff-bisera artist.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\fff-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"916229"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:59:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/gggg-bisera artist.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\gggg-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"137866"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:57:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/gggg-bisera artist.us9510i251.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\gggg-bisera artist.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"us9510i251"},{"Name":"integrity","Value":"sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="},{"Name":"label","Value":"_content/MusicEShop.Web/img/gggg-bisera artist.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137866"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:57:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/gggg-plsArtistName.1pxl5c30of.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\gggg-plsArtistName.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1pxl5c30of"},{"Name":"integrity","Value":"sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="},{"Name":"label","Value":"_content/MusicEShop.Web/img/gggg-plsArtistName.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"501850"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 19:55:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/gggg-plsArtistName.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\gggg-plsArtistName.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"501850"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022K12v6Ak0/ZOUmocfuStcvJB63zAbWZRpE9ACFCuRZ7I=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 19:55:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Pretty Hate Machine-plsArtistName.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Pretty Hate Machine-plsArtistName.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-w\u002BtbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"204407"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022w\u002BtbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:59:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Pretty Hate Machine-plsArtistName.vhs2blxah4.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Pretty Hate Machine-plsArtistName.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vhs2blxah4"},{"Name":"integrity","Value":"sha256-w\u002BtbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8="},{"Name":"label","Value":"_content/MusicEShop.Web/img/Pretty Hate Machine-plsArtistName.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"204407"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022w\u002BtbiR1Zm0FD7/nyM0vnaqFP7je6KsvEvZrDxSF3KR8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:59:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/shop-bg.b3zymi5b06.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\shop-bg.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -71,6 +155,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2atz10DHl2iGh8lEXT4TS1KcxQOwjjrg3KrW8CR9LjU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"248109"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222atz10DHl2iGh8lEXT4TS1KcxQOwjjrg3KrW8CR9LjU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 17:06:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/testalbum-HEHE.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\testalbum-HEHE.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"137866"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:00:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/testalbum-HEHE.us9510i251.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\testalbum-HEHE.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"us9510i251"},{"Name":"integrity","Value":"sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="},{"Name":"label","Value":"_content/MusicEShop.Web/img/testalbum-HEHE.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137866"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Feb 2025 16:00:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

@@ -12,8 +12,8 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250207025941_test1")]
-    partial class test1
+    [Migration("20250208165513_MigrationPls")]
+    partial class MigrationPls
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -177,6 +177,9 @@ namespace MusicEShop.Repository.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CoverImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Details")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Genre")

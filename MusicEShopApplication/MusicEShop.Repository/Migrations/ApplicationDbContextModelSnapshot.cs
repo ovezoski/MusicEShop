@@ -176,6 +176,9 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<string>("CoverImage")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Details")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
