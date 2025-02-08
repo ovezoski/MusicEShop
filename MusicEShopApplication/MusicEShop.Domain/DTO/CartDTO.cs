@@ -10,7 +10,7 @@ namespace MusicEShop.Domain.DTO
 {
     public class CartDTO
     {
-        public List<CartItemDTO>? CartItem { get; set; }
+        public List<OrderItem>? CartItem { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalPrice { get; set; }
     }

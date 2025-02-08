@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vNdNv+xrnDdRW9gMcOoD5mmA3vVROm5aZ/h83y3gJfI=",
+  "Hash": "8QW/1LHugg1whQ89/LL2YT2IJK8xknz6Sch6zWpa5GA=",
   "Source": "MusicEShop.Web",
   "BasePath": "_content/MusicEShop.Web",
   "Mode": "Default",
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q3mfio54r7",
-      "Integrity": "WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=",
+      "Fingerprint": "2c51ldfxxl",
+      "Integrity": "QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Blonde-Frank Ocean.jpg"
@@ -5007,6 +5007,51 @@
       ]
     },
     {
+      "Route": "img/Blonde-Frank Ocean.2c51ldfxxl.jpg",
+      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2c51ldfxxl"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Blonde-Frank Ocean.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs="
+        }
+      ]
+    },
+    {
       "Route": "img/Blonde-Frank Ocean.jpg",
       "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
       "Selectors": [],
@@ -5017,7 +5062,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3682"
+          "Value": "4576"
         },
         {
           "Name": "Content-Type",
@@ -5025,11 +5070,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=\""
+          "Value": "\"QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
+          "Value": "Sat, 08 Feb 2025 19:38:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5039,52 +5084,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="
-        }
-      ]
-    },
-    {
-      "Route": "img/Blonde-Frank Ocean.q3mfio54r7.jpg",
-      "AssetFile": "C:\\Users\\Leonid\\Desktop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3682"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "q3mfio54r7"
-        },
-        {
-          "Name": "label",
-          "Value": "img/Blonde-Frank Ocean.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="
+          "Value": "sha256-QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs="
         }
       ]
     },
@@ -5111,7 +5111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+          "Value": "Fri, 07 Feb 2025 16:55:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5148,7 +5148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+          "Value": "Fri, 07 Feb 2025 16:55:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9949,7 +9949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9986,7 +9986,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10031,7 +10031,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10076,7 +10076,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         },
         {
           "Name": "Cache-Control",

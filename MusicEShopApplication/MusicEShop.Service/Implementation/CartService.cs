@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Stripe.Checkout;
 
 namespace MusicEShop.Service.Implementation
 {
@@ -19,10 +20,11 @@ namespace MusicEShop.Service.Implementation
         private readonly IRepository<CartItem> _cartItemRepository;
         private readonly IUserRepository _userRepository;
         private readonly IRepository<Order> _orderRepository;
-        private readonly IRepository<OrderItem> _orderItemRepository;
+        private readonly IRepository<Domain.DomainModels.OrderItem> _orderItemRepository;
         private readonly IEmailService _emailService;
+        private IPaymentService _paymentService;
 
-        public CartService(IRepository<Cart> cartRepository, IRepository<CartItem> cartItemRepository, IUserRepository userRepository, IRepository<Order> orderRepository, IRepository<OrderItem> orderItemRepository, IEmailService emailService)
+        public CartService(IRepository<Cart> cartRepository, IRepository<CartItem> cartItemRepository, IUserRepository userRepository, IRepository<Order> orderRepository, IRepository<Domain.DomainModels.OrderItem> orderItemRepository, IEmailService emailService, IPaymentService paymentService)
         {
             _cartRepository = cartRepository;
             _cartItemRepository = cartItemRepository;
@@ -30,6 +32,7 @@ namespace MusicEShop.Service.Implementation
             _orderRepository = orderRepository;
             _orderItemRepository = orderItemRepository;
             _emailService = emailService;
+            _paymentService = paymentService;   
         }
 
         public bool AddToShoppingConfirmed(CartItem model, string userId)
@@ -45,30 +48,29 @@ namespace MusicEShop.Service.Implementation
             return true;
         }
 
-        public bool deleteItemFromShoppingCart(string userId, Guid trackId, Guid albumId)
+        public bool DeleteItemFromShoppingCart(string userId, Guid albumId)
         {
             var user = _userRepository.Get(userId);
-            if (user == null || user.Cart == null)
+            if (user?.Cart?.Id == null)
                 return false;
 
             var cart = _cartRepository.GetById(user.Cart.Id);
-            if (cart == null || cart.CartItems == null)
+            if (cart?.CartItems == null)
                 return false;
 
-            var cartItem = cart.CartItems
-                .FirstOrDefault(ci => ( ci.TrackId == trackId) ||
-                                      ( ci.AlbumId == albumId));
+            var cartItem = cart.CartItems.FirstOrDefault(ci => ci.AlbumId == albumId);
+            if (cartItem == null)
+                return false;
 
-            if (cartItem != null)
-            {
-                cart.CartItems.Remove(cartItem);
-                _cartItemRepository.Delete(cartItem); 
-                _cartRepository.Update(cart);
-                return true;
-            }
+            cart.CartItems.Remove(cartItem);
+            _cartItemRepository.Delete(cartItem); // Assuming this updates the DB
 
-            return false;
+            // Optional: If needed, update the cart in DB
+            _cartRepository.Update(cart);
+
+            return true;
         }
+
 
         public CartDTO getShoppingCartInfo(string userId)
         {
@@ -82,90 +84,93 @@ namespace MusicEShop.Service.Implementation
 
             CartDTO dto = new CartDTO
             {
-                CartItem = allItems?.Select(x => new CartItemDTO
+                CartItem = allItems?.Select(x => new Domain.DomainModels.OrderItem
                 {
-                    ItemId = x.Id,
-                    Name = x.Track != null ? x.Track.Title : x.Album?.Title ?? "Unknown Item",
+                    OrderId = Guid.NewGuid(),
+                    TrackId = x.Track?.Id,
+                    AlbumId = x.Album?.Id,
+                    Track = x.Track,
+                    Album = x.Album,
                     Quantity = x.Quantity,
                     Price = (x.Track != null ? x.Track.Price : x.Album?.Price) ?? 0
-                }).ToList() ?? new List<CartItemDTO>(),
+                }).ToList() ?? [],
                 TotalPrice = totalPrice
             };
             return dto;
+
         }
 
-        public bool order(string userId)
+        public SessionCreateOptions order(string userId)
         {
-            if (userId != null)
+            if (string.IsNullOrWhiteSpace(userId))
+                return null;
+
+            var loggedInUser = _userRepository.Get(userId);
+            if (loggedInUser?.Cart?.CartItems?.Any(x => x.Album != null) != true)
+                return null;
+
+            Order order = new()
             {
-                var loggedInUser = _userRepository.Get(userId);
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                User = loggedInUser
+            };
 
-                var userCart = loggedInUser?.Cart;
-                if (userCart == null || userCart.CartItems == null || !userCart.CartItems.Any())
-                    return false; 
+            _orderRepository.Insert(order);
 
-                Order order = new Order
-                {
-                    Id = Guid.NewGuid(),
-                    UserId = userId,
-                    User = loggedInUser
-                };
+            List<Domain.DomainModels.OrderItem> orderItems = [];
 
-                _orderRepository.Insert(order);
-
-                List<OrderItem> orderItems = new List<OrderItem>();
-
-                var orderedItems = userCart.CartItems.Select(x => new OrderItem
+            var orderedItems = loggedInUser.Cart.CartItems
+                .Where(x => x.Album != null)  // Only include albums
+                .Select(x => new OrderItem
                 {
                     Id = Guid.NewGuid(),
                     OrderId = order.Id,
                     Order = order,
-                    TrackId = x.Track?.Id,
-                    Track = x.Track,
-                    AlbumId = x.Album?.Id,
+                    AlbumId = x.Album.Id,
                     Album = x.Album,
                     Quantity = x.Quantity,
-                    Price = (x.Track != null ? x.Track.Price : x.Album?.Price) ?? 0
-                }).ToList();
+                    Price = x.Album.Price
+                })
+                .ToList();
 
-                EmailMessage message = new EmailMessage
-                {
-                    Subject = "Successful Order",
-                    MailTo = loggedInUser.Email
-                };
+            if (!orderedItems.Any()) // Just an extra safety check
+                return null;
 
-                StringBuilder sb = new StringBuilder();
-                sb.AppendLine("Your order is completed. The order contains:");
+            EmailMessage message = new EmailMessage
+            {
+                Subject = "Successful Order",
+                MailTo = loggedInUser.Email
+            };
 
-                decimal totalPrice = 0;
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Your order is completed. The order contains:");
 
-                for (int i = 0; i < orderedItems.Count; i++)
-                {
-                    var item = orderedItems[i];
-                    string itemName = item.Track != null ? item.Track.Title : item.Album?.Title ?? "Unknown Item";
-                    decimal itemPrice = item.Price;
-                    totalPrice += itemPrice * item.Quantity;
+            decimal totalPrice = 0;
+            var sessionOptions = _paymentService.CreateSessionOptions(orderedItems);
 
-                    sb.AppendLine($"{i + 1}. {itemName} - Quantity: {item.Quantity}, Price: ${itemPrice}");
-                }
-
-                sb.AppendLine($"Total price for your order: ${totalPrice}");
-                message.Content = sb.ToString();
-
-                orderItems.AddRange(orderedItems);
-                foreach (var orderItem in orderItems)
-                {
-                    _orderItemRepository.Insert(orderItem);
-                }
-
-                userCart.CartItems.Clear();
-                _cartRepository.Update(userCart);
-
-                _emailService.SendEmailAsync(message);
-
-                return true;
+            for (int i = 0; i < orderedItems.Count; i++)
+            {
+                var item = orderedItems[i];
+                sb.AppendLine($"{i + 1}. {item.Album.Title} - Quantity: {item.Quantity}, Price: ${item.Price}");
+                totalPrice += item.Price * item.Quantity;
             }
-            return false;
+
+            sb.AppendLine($"Total price for your order: ${totalPrice}");
+            message.Content = sb.ToString();
+
+            orderItems.AddRange(orderedItems);
+            foreach (var orderItem in orderItems)
+            {
+                _orderItemRepository.Insert(orderItem);
+            }
+            loggedInUser.Cart.CartItems.Clear();
+            _cartRepository.Update(loggedInUser.Cart);
+            
+            _emailService.SendEmailAsync(message);
+
+            return sessionOptions;
         }
+
     }
 }

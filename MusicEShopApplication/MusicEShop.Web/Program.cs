@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MusicEShop.Domain.DomainModels;
 using MusicEShop.Domain.Identity;
 using MusicEShop.Repository;
 using MusicEShop.Repository.Implementation;
 using MusicEShop.Repository.Interface;
 using MusicEShop.Service.Implementation;
 using MusicEShop.Service.Interface;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,13 +28,16 @@ builder.Services.AddScoped<IArtistRepository, ArtistRepository>();
 builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
+
 builder.Services.AddScoped <IAlbumService,AlbumService>();
 builder.Services.AddScoped<IArtistService, ArtistService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ITrackService, TrackService>();
-
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe")["SecretKey"];
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -77,8 +82,8 @@ using (var scope = app.Services.CreateScope())
     var userManager = 
         scope.ServiceProvider.GetRequiredService<UserManager<MusicEShopUser>>();
 
-    string email = "admin@admin.com";
-    string password = "Test123_";
+    string email = "integriranisistemi7@gmail.com";
+    string password = "IntegriraniSistemi1!";
 
     if(await userManager.FindByEmailAsync(email) == null)
     {

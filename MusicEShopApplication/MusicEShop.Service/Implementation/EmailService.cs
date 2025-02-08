@@ -26,11 +26,11 @@ namespace MusicEShop.Service.Implementation
         {
             var emailMessage = new MimeMessage
             {
-                Sender = new MailboxAddress("EShop Application", "integrated_systems_finki@outlook.com"),
+                Sender = new MailboxAddress("EShop Application", "integriranisistemi7@gmail.com"),
                 Subject = allMails.Subject
             };
 
-            emailMessage.From.Add(new MailboxAddress("EShop Application", "integrated_systems_finki@outlook.com"));
+            emailMessage.From.Add(new MailboxAddress("EShop Application", "integriranisistemi7@gmail.com"));
 
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = allMails.Content };
 

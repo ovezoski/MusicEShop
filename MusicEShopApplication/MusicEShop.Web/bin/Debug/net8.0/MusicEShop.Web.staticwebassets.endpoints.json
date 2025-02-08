@@ -2249,7 +2249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2294,7 +2294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 09:02:15 GMT"
+          "Value": "Sat, 08 Feb 2025 16:59:49 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2469,6 +2469,51 @@
       ]
     },
     {
+      "Route": "img/Blonde-Frank Ocean.2c51ldfxxl.jpg",
+      "AssetFile": "img/Blonde-Frank Ocean.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:38:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2c51ldfxxl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Blonde-Frank Ocean.jpg"
+        }
+      ]
+    },
+    {
       "Route": "img/Blonde-Frank Ocean.jpg",
       "AssetFile": "img/Blonde-Frank Ocean.jpg",
       "Selectors": [],
@@ -2483,7 +2528,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3682"
+          "Value": "4576"
         },
         {
           "Name": "Content-Type",
@@ -2491,62 +2536,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=\""
+          "Value": "\"QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
+          "Value": "Sat, 08 Feb 2025 19:38:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="
-        }
-      ]
-    },
-    {
-      "Route": "img/Blonde-Frank Ocean.q3mfio54r7.jpg",
-      "AssetFile": "img/Blonde-Frank Ocean.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3682"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 12:00:02 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "q3mfio54r7"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WuD8FwbdSG247BgkNARA7ihBsCzKZnudjhWtCymIKyU="
-        },
-        {
-          "Name": "label",
-          "Value": "img/Blonde-Frank Ocean.jpg"
+          "Value": "sha256-QoqyzeOwg79nKABWQ1xaC3WtCS7LoHU/H6UGeZDBrUs="
         }
       ]
     },
@@ -2577,7 +2577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+          "Value": "Fri, 07 Feb 2025 16:55:23 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2614,7 +2614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Feb 2025 15:55:24 GMT"
+          "Value": "Fri, 07 Feb 2025 16:55:23 GMT"
         }
       ],
       "EndpointProperties": [
