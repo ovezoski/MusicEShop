@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,10 +18,12 @@ namespace MusicEShop.Web.Controllers
     {
         private readonly IAlbumService _albumService;
         private readonly IArtistService _artistService;
-        public AlbumsController(IAlbumService albumService, IArtistService artistService)
+        private readonly ICartService _cartService;
+        public AlbumsController(IAlbumService albumService, IArtistService artistService, ICartService cartService)
         {
             _albumService = albumService;
             _artistService = artistService;
+            _cartService = cartService;
         }
 
         //List<Album> GetAllAlbums();
@@ -204,6 +207,39 @@ namespace MusicEShop.Web.Controllers
 
             return View(albums);
         }
+
+        public IActionResult AddToCart(Guid id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var album = _albumService.GetAlbumById(id);
+
+            CartItem ps = new CartItem();
+
+            if (album != null)
+            {
+                ps.AlbumId = album.Id;
+            }
+
+            return View(ps);
+        }
+
+        [HttpPost]
+        public IActionResult AddToCartConfirmed(CartItem model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            _cartService.AddToShoppingConfirmed(model, userId);
+
+
+
+            return View("Index", _albumService.GetAllAlbums());
+        }
+
+
         private bool AlbumExists(Guid id)
         {
             return _albumService.GetAllAlbums().Any(e => e.Id == id);

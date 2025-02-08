@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MusicEShop.Domain.DomainModels
 {
-    public class BaseEntity
+    public  class StripeSettings:BaseEntity
     {
-        
-        public Guid Id { get; set; }
+        public string SecretKey {  get; set; }
+        public string PublishableKey { get; set; }
     }
 }

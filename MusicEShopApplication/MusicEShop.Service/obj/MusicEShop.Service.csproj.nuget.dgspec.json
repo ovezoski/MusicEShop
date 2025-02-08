@@ -71,6 +71,10 @@
               "target": "Package",
               "version": "[4.10.0, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.3.0, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -166,6 +170,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[4.10.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.3.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -265,6 +273,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[4.10.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.3.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
