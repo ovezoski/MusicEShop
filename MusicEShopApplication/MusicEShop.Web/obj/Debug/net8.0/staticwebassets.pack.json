@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\Pretty Hate Machine-plsArtistName.png"
     },
     {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png",
+      "PackagePath": "staticwebassets\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png"
+    },
+    {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\background-image.jpeg",
       "PackagePath": "staticwebassets\\img\\background-image.jpeg"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\testalbum-HEHE.png",
       "PackagePath": "staticwebassets\\img\\testalbum-HEHE.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\tgttt-ognen artist.png",
+      "PackagePath": "staticwebassets\\img\\tgttt-ognen artist.png"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",

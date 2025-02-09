@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\pc\\desktop\\musiceshop\\musiceshop\\musiceshopapplication\\musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|c:\\users\\pc\\desktop\\musiceshop\\musiceshop\\musiceshopapplication\\musiceshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB27FFE-1C3C-4445-8647-05EEFA2E57D4}|MusicEShop.Web\\MusicEShop.Web.csproj|solutionrelative:musiceshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBC561C-97C2-43EF-B373-BA83DDAB6E73}|MusicEShop.Repository\\MusicEShop.Repository.csproj|c:\\users\\pc\\desktop\\musiceshop\\musiceshop\\musiceshopapplication\\musiceshop.repository\\migrations\\20250208165513_migrationpls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBC561C-97C2-43EF-B373-BA83DDAB6E73}|MusicEShop.Repository\\MusicEShop.Repository.csproj|solutionrelative:musiceshop.repository\\migrations\\20250208165513_migrationpls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlbumsController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "RelativeDocumentMoniker": "MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "RelativeToolTip": "MusicEShop.Web\\Controllers\\AlbumsController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAcwDcAAAAmAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MusicEShop.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\Program.cs",
+              "RelativeToolTip": "MusicEShop.Web\\Program.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAEwF0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T18:50:46.683Z",
+              "WhenOpened": "2025-02-09T17:24:34.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20250208165513_MigrationPls.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250208165513_MigrationPls.cs",
-              "RelativeDocumentMoniker": "MusicEShop.Repository\\Migrations\\20250208165513_MigrationPls.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250208165513_MigrationPls.cs",
-              "RelativeToolTip": "MusicEShop.Repository\\Migrations\\20250208165513_MigrationPls.cs",
+              "Title": "20250209172331_pomospls.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs",
+              "RelativeDocumentMoniker": "MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs",
+              "RelativeToolTip": "MusicEShop.Repository\\Migrations\\20250209172331_pomospls.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:55:13.845Z",
+              "WhenOpened": "2025-02-09T17:23:31.363Z",
               "EditorCaption": ""
             }
           ]

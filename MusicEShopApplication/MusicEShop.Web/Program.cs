@@ -82,8 +82,8 @@ using (var scope = app.Services.CreateScope())
     var userManager = 
         scope.ServiceProvider.GetRequiredService<UserManager<MusicEShopUser>>();
 
-    string email = "integriranisistemi7@gmail.com";
-    string password = "IntegriraniSistemi1!";
+    string email = "admin@admin.com";
+    string password = "Test123_";
 
     if(await userManager.FindByEmailAsync(email) == null)
     {
@@ -91,6 +91,7 @@ using (var scope = app.Services.CreateScope())
         user.UserName = email;
         user.Email = email;
         user.EmailConfirmed = true;
+        user.Cart = new Cart();
 
         await userManager.CreateAsync(user, password);
 
