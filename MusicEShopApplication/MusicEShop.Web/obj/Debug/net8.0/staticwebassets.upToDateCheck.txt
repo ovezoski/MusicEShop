@@ -1,6 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\artists\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif
 wwwroot\img\artists\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png
+wwwroot\img\artists\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg
+wwwroot\img\artists\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg
+wwwroot\img\Artpop-Lady Gaga.webp
 wwwroot\img\background-image.jpeg
 wwwroot\img\Blonde-Frank Ocean.jpg
 wwwroot\img\Dark Side of The Moon-Pink Floyd.jpg
@@ -14,6 +18,7 @@ wwwroot\img\Pretty Hate Machine-plsArtistName.png
 wwwroot\img\shop-bg.jpg
 wwwroot\img\testalbum-HEHE.png
 wwwroot\img\tgttt-ognen artist.png
+wwwroot\img\The Fame-Lady Gaga.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Artpop-Lady Gaga.webp",
+      "PackagePath": "staticwebassets\\img\\Artpop-Lady Gaga.webp"
+    },
+    {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Blonde-Frank Ocean.jpg",
       "PackagePath": "staticwebassets\\img\\Blonde-Frank Ocean.jpg"
     },
@@ -23,6 +27,22 @@
     {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Pretty Hate Machine-plsArtistName.png",
       "PackagePath": "staticwebassets\\img\\Pretty Hate Machine-plsArtistName.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\The Fame-Lady Gaga.png",
+      "PackagePath": "staticwebassets\\img\\The Fame-Lady Gaga.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "PackagePath": "staticwebassets\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "PackagePath": "staticwebassets\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "PackagePath": "staticwebassets\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png",

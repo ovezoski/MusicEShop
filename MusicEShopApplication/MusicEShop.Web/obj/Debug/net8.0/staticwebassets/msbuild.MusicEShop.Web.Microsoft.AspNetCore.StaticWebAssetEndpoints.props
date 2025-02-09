@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 16:34:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.aqpul4czy7.jfif">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aqpul4czy7"},{"Name":"integrity","Value":"sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="},{"Name":"label","Value":"_content/MusicEShop.Web/img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17001"},{"Name":"Content-Type","Value":"image/pjpeg"},{"Name":"ETag","Value":"\u0022wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:27:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"17001"},{"Name":"Content-Type","Value":"image/pjpeg"},{"Name":"ETag","Value":"\u0022wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:27:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.cwukcniakw.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -35,6 +47,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"916229"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lD4ntCUJKcfzeUs39WXtMLbCxC30ET5\u002BdsibYSARw2k=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:16:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.8cjeoghgv2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8cjeoghgv2"},{"Name":"integrity","Value":"sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/\u002BbA="},{"Name":"label","Value":"_content/MusicEShop.Web/img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"287009"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/\u002BbA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:28:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/\u002BbA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"287009"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/\u002BbA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:28:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"366977"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:26:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.nlzsx5bpck.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\artists\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nlzsx5bpck"},{"Name":"integrity","Value":"sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="},{"Name":"label","Value":"_content/MusicEShop.Web/img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"366977"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:26:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Artpop-Lady Gaga.0ilqqdxh98.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Artpop-Lady Gaga.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ilqqdxh98"},{"Name":"integrity","Value":"sha256-qBKcb0\u002BIK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="},{"Name":"label","Value":"_content/MusicEShop.Web/img/Artpop-Lady Gaga.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"106702"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022qBKcb0\u002BIK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:31:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/Artpop-Lady Gaga.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Artpop-Lady Gaga.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qBKcb0\u002BIK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"106702"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022qBKcb0\u002BIK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:31:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/background-image.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\background-image.jpeg'))</AssetFile>
@@ -191,6 +239,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"us9510i251"},{"Name":"integrity","Value":"sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="},{"Name":"label","Value":"_content/MusicEShop.Web/img/tgttt-ognen artist.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137866"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00223gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 16:57:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/The Fame-Lady Gaga.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\The Fame-Lady Gaga.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"98906"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:29:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/img/The Fame-Lady Gaga.s6t4ki9auz.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\The Fame-Lady Gaga.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s6t4ki9auz"},{"Name":"integrity","Value":"sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="},{"Name":"label","Value":"_content/MusicEShop.Web/img/The Fame-Lady Gaga.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"98906"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 17:29:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MusicEShop.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

@@ -32,10 +32,7 @@ namespace MusicEShop.Web.Controllers
         {
 
             var tracks=_trackService.GetAllTracks();
-            foreach (var track in tracks)
-            {
-                track.Album=_albumService.GetAlbumById(track.AlbumId);
-            }
+            
             
             return View(tracks);
         }
@@ -96,7 +93,7 @@ namespace MusicEShop.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["AlbumId"] = new SelectList(_albumService.GetAllAlbums(), "Id", "Id", track.AlbumId);
+            ViewData["AlbumId"] = new SelectList(_albumService.GetAllAlbums(), "Id", "Title", track.AlbumId);
             return View(track);
         }
 
@@ -131,7 +128,7 @@ namespace MusicEShop.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AlbumId"] = new SelectList(_albumService.GetAllAlbums(), "Id", "Id", track.AlbumId);
+            ViewData["AlbumId"] = new SelectList(_albumService.GetAllAlbums(), "Id", "Title", track.AlbumId);
             return View(track);
         }
 

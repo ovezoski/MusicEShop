@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QfiD8i9NobBeokI3kMi11Yfa46F1XZ0Ngqcjg+lYlaE=",
+  "Hash": "SFschRtCC2VvaoIO1CXe/kJ9F775Np+/+La9ERLZPhM=",
   "Source": "MusicEShop.Web",
   "BasePath": "_content/MusicEShop.Web",
   "Mode": "Default",
@@ -1361,6 +1361,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aqpul4czy7",
+      "Integrity": "wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif"
+    },
+    {
       "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png",
       "SourceId": "MusicEShop.Web",
       "SourceType": "Discovered",
@@ -1380,6 +1401,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8cjeoghgv2",
+      "Integrity": "aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nlzsx5bpck",
+      "Integrity": "xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Artpop-Lady Gaga.webp",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/Artpop-Lady Gaga#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ilqqdxh98",
+      "Integrity": "qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Artpop-Lady Gaga.webp"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\background-image.jpeg",
@@ -1653,6 +1737,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\tgttt-ognen artist.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\The Fame-Lady Gaga.png",
+      "SourceId": "MusicEShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\",
+      "BasePath": "_content/MusicEShop.Web",
+      "RelativePath": "img/The Fame-Lady Gaga#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s6t4ki9auz",
+      "Integrity": "PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\The Fame-Lady Gaga.png"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\js\\site.js",
@@ -5259,6 +5364,88 @@
       ]
     },
     {
+      "Route": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.aqpul4czy7.jfif",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:27:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aqpul4czy7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:27:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="
+        }
+      ]
+    },
+    {
       "Route": "img/artists/ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.cwukcniakw.png",
       "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png",
       "Selectors": [],
@@ -5337,6 +5524,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-lD4ntCUJKcfzeUs39WXtMLbCxC30ET5+dsibYSARw2k="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.8cjeoghgv2.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8cjeoghgv2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:26:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.nlzsx5bpck.jpg",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\artists\\Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:26:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nlzsx5bpck"
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="
+        }
+      ]
+    },
+    {
+      "Route": "img/Artpop-Lady Gaga.0ilqqdxh98.webp",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Artpop-Lady Gaga.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:31:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ilqqdxh98"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Artpop-Lady Gaga.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="
+        }
+      ]
+    },
+    {
+      "Route": "img/Artpop-Lady Gaga.webp",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\Artpop-Lady Gaga.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:31:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="
         }
       ]
     },
@@ -6403,6 +6836,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-3gEyejPfTEw0bFYu2LebjkmJ/B6Udro6PKJSJi8hhq4="
+        }
+      ]
+    },
+    {
+      "Route": "img/The Fame-Lady Gaga.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\The Fame-Lady Gaga.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="
+        }
+      ]
+    },
+    {
+      "Route": "img/The Fame-Lady Gaga.s6t4ki9auz.png",
+      "AssetFile": "C:\\Users\\pc\\Desktop\\MusicEShop\\MusicEShop\\MusicEShopApplication\\MusicEShop.Web\\wwwroot\\img\\The Fame-Lady Gaga.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s6t4ki9auz"
+        },
+        {
+          "Name": "label",
+          "Value": "img/The Fame-Lady Gaga.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="
         }
       ]
     },

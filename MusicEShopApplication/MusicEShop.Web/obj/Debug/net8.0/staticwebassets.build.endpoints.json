@@ -2469,6 +2469,88 @@
       ]
     },
     {
+      "Route": "img/Artpop-Lady Gaga.0ilqqdxh98.webp",
+      "AssetFile": "img/Artpop-Lady Gaga.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:31:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ilqqdxh98"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="
+        },
+        {
+          "Name": "label",
+          "Value": "img/Artpop-Lady Gaga.webp"
+        }
+      ]
+    },
+    {
+      "Route": "img/Artpop-Lady Gaga.webp",
+      "AssetFile": "img/Artpop-Lady Gaga.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:31:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qBKcb0+IK5S3I/86/Fzikobxqh/zJopaj446OA1yl5c="
+        }
+      ]
+    },
+    {
       "Route": "img/Blonde-Frank Ocean.2c51ldfxxl.jpg",
       "AssetFile": "img/Blonde-Frank Ocean.jpg",
       "Selectors": [],
@@ -2711,6 +2793,334 @@
         {
           "Name": "label",
           "Value": "img/Pretty Hate Machine-plsArtistName.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/The Fame-Lady Gaga.png",
+      "AssetFile": "img/The Fame-Lady Gaga.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:29:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="
+        }
+      ]
+    },
+    {
+      "Route": "img/The Fame-Lady Gaga.s6t4ki9auz.png",
+      "AssetFile": "img/The Fame-Lady Gaga.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:29:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s6t4ki9auz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PGfso1EyHLar9q7zhxKU3zj3jbx8nDFbdoXKnjCCY3U="
+        },
+        {
+          "Name": "label",
+          "Value": "img/The Fame-Lady Gaga.png"
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.aqpul4czy7.jfif",
+      "AssetFile": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:27:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aqpul4czy7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif"
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "AssetFile": "img/artists/Britney Spears-f4d3fd04-cd7a-4723-b105-0a60230ad225.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17001"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:27:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wiKQNla34OZSwUapxPriHZp9hCcO1KzYEPlEBU3zjl8="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.8cjeoghgv2.jpg",
+      "AssetFile": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:28:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8cjeoghgv2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA="
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "AssetFile": "img/artists/Lady Gaga-095ac3f2-9124-4afd-b4cd-47999f9fe003.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "287009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:28:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aMG2RXCngL4/IYWmf68waSeJbjpZEWn038j5uo4/+bA="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "AssetFile": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:26:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="
+        }
+      ]
+    },
+    {
+      "Route": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.nlzsx5bpck.jpg",
+      "AssetFile": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 17:26:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nlzsx5bpck"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xXdyGlWBOhSjDwkTHR0nv52rx847zU7gT6x4U7aX9Qs="
+        },
+        {
+          "Name": "label",
+          "Value": "img/artists/Michael Jackson-213a3189-e87a-402a-9f87-a822b14f931a.jpg"
         }
       ]
     },
