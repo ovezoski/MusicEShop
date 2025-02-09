@@ -48,8 +48,9 @@
                         @Html.DisplayFor(modelItem => item.Quantity)
                     </td>
                     <td>
-                        |
-                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-Ak="@item.Album.Id">Delete</a>
+                        <p>@item.AlbumId</p>
+
+                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-itemId="@item.AlbumId">Delete</a>
                     </td>
                 </tr>
             }
@@ -68,8 +69,8 @@
                         @Html.DisplayFor(modelItem => item.Quantity)
                     </td>
                     <td>
-                        |
-                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-Ak="@item.Track.Id">Delete</a>
+                        <p>@item.TrackId</p>
+                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-itemId="@item.TrackId">Delete</a>
                     </td>
                 </tr>
 
