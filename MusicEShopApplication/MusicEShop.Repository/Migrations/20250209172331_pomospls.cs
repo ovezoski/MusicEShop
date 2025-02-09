@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MusicEShop.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class MigrationPls : Migration
+    public partial class pomospls : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,8 @@ namespace MusicEShop.Repository.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ArtistImage = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

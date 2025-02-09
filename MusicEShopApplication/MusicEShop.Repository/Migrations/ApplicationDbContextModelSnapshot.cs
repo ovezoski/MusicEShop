@@ -204,6 +204,9 @@ namespace MusicEShop.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("ArtistImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
 

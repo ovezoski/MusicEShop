@@ -9,6 +9,8 @@ namespace MusicEShop.Repository.Interface
 {
     public interface IArtistRepository : IRepository<Artist>
     {
-        List<Artist> GetArtistsWithAlbums();
+        List<Artist> GetAllArtists();
+        Artist? GetArtistById(Guid id);
+        //List<Artist> GetArtistsWithAlbums();
     }
 }
