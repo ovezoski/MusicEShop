@@ -24,7 +24,8 @@ namespace MusicEShop.Service.Implementation
                         Currency = "eur",
                         ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
-                            Name = item.Album.Title
+
+                            Name = item.Album != null ? item.Album.Title : item.Track.Title
                         },
                     },
                     Quantity = item.Quantity,
