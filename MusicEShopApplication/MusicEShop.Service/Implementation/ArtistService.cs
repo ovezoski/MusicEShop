@@ -12,9 +12,9 @@ namespace MusicEShop.Service.Implementation
 {
     public class ArtistService : IArtistService
     {
-        private readonly IRepository<Artist> _artistRepository;
+        private readonly IArtistRepository _artistRepository;
 
-        public ArtistService(IRepository<Artist> artistRepository)
+        public ArtistService(IArtistRepository artistRepository)
         {
             _artistRepository = artistRepository;
         }
@@ -26,18 +26,18 @@ namespace MusicEShop.Service.Implementation
 
         public void DeleteArtist(Guid id)
         {
-            var artist = _artistRepository.GetById(id);
+            var artist = _artistRepository.GetArtistById(id);
             _artistRepository.Delete(artist);
         }
 
         public List<Artist> GetAllArtists()
         {
-            return _artistRepository.GetAll().ToList();
+            return _artistRepository.GetAllArtists().ToList();
         }
 
         public Artist GetArtistById(Guid id)
         {
-            var artist = _artistRepository.GetById(id);
+            var artist = _artistRepository.GetArtistById(id);
             return artist;
         }
 

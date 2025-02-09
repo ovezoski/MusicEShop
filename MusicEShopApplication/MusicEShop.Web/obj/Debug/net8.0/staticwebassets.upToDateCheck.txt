@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\artists\ffff-ec11055b-3bd6-4bc8-b7bf-5af957d8990b.png
 wwwroot\img\background-image.jpeg
 wwwroot\img\Blonde-Frank Ocean.jpg
 wwwroot\img\Dark Side of The Moon-Pink Floyd.jpg
@@ -12,6 +13,7 @@ wwwroot\img\gggg-plsArtistName.jpg
 wwwroot\img\Pretty Hate Machine-plsArtistName.png
 wwwroot\img\shop-bg.jpg
 wwwroot\img\testalbum-HEHE.png
+wwwroot\img\tgttt-ognen artist.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -55,18 +55,43 @@ namespace MusicEShop.Web.Controllers
         // POST: Artists/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Name,Country,Genre,Id")] Artist artist)
+        public IActionResult Create([Bind("Name,Country,Genre,ArtistImage,Id")] Artist artist, IFormFile artistImage)
         {
             if (ModelState.IsValid)
             {
                 artist.Id = Guid.NewGuid();
+
+                if (artistImage != null && artistImage.Length > 0)
+                {
+                    string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/artists");
+
+                    if (!Directory.Exists(uploadsFolder))
+                    {
+                        Directory.CreateDirectory(uploadsFolder);
+                    }
+
+                    string uniqueFileName = artist.Name + "-" + Guid.NewGuid().ToString() + Path.GetExtension(artistImage.FileName);
+
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        artistImage.CopyTo(fileStream);
+                    }
+
+                    artist.ArtistImage = "/img/artists/" + uniqueFileName;
+                }
+
                 _artistService.CreateArtist(artist);
                 return RedirectToAction(nameof(Index));
             }
+
             return View(artist);
         }
+
 
         // GET: Artists/Edit/5
         public IActionResult Edit(Guid id)
@@ -89,7 +114,7 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Name,Country,Genre,Id")] Artist artist)
+        public IActionResult Edit(Guid id, [Bind("Name,Country,Genre,ArtistImage,Id")] Artist artist)
         {
             if (id != artist.Id)
             {
