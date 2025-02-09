@@ -22,9 +22,9 @@ namespace MusicEShop.Repository.Implementation
         public List<Artist> GetAllArtists()
         {
             return entities
-                .Include(a => a.Albums) // Include Albums for One-to-Many Relationship
-                .Include(a => a.ArtistTracks!) // Include ArtistTracks for Many-to-Many Relationship
-                .ThenInclude(at => at.Track) // Load associated Tracks
+                .Include(a => a.Albums) 
+                .Include(a => a.ArtistTracks!) 
+                .ThenInclude(at => at.Track) 
                 .ToList();
         }
 

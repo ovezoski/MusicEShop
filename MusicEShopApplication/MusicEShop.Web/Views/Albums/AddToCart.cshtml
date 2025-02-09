@@ -1,21 +1,30 @@
 ﻿@model MusicEShop.Domain.DomainModels.CartItem
 
-<h1>Add product to Shopping cart</h1>
+<div class="container mt-4">
+    <h1 class="text-center">Add Product to Shopping Cart</h1>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="AddToCartConfirmed" class="shadow p-4 rounded bg-light">
+                <input type="hidden" asp-for="AlbumId" />
 
-<div class="row">
-    <div class="col-4">
+                <div class="form-group mb-3">
+                    <label asp-for="Quantity" class="form-label fw-bold">Quantity</label>
+                    <input asp-for="Quantity" type="number" min="1" class="form-control" placeholder="Enter quantity" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
 
-        <form asp-action="AddToCartConfirmed">
-            <input type="hidden" asp-for="AlbumId" />
-            <input type="hidden" asp-for="AlbumId" />
-
-            <div class="form-group">
-                <label asp-for="Quantity"></label>
-                <input asp-for="Quantity" class="form-control" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Add To Cart" class="btn-info" />
-            </div>
-        </form>
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                    <button type="submit" class="btn btn-primary">Add To Cart</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
