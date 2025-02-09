@@ -1,4 +1,4 @@
-﻿﻿@using MusicEShop.Domain
+﻿@using MusicEShop.Domain
 ﻿@using Microsoft.Extensions.Options
 @model MusicEShop.Domain.DTO.CartDTO
 
@@ -33,26 +33,49 @@
         {
 
             var item = Model.CartItem[i];
+            @if (item.AlbumId != null)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Album.Title)
+                    </td>
 
-            <p> Album id : @item.AlbumId</p>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Album.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        |
+                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-Ak="@item.Album.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Track.Title)
+                    </td>
 
-            <tr>
-                <td>@(i + 1)</td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Album.Title)
-                </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Track.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        |
+                        <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-Ak="@item.Track.Id">Delete</a>
+                    </td>
+                </tr>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Album.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Quantity)
-                </td>
-                <td>
-                    |
-                    <a asp-action="DeleteFromShoppingCart" asp-controller="ShoppingCart" asp-route-Ak="@item.Album.Id">Delete</a>
-                </td>
-            </tr>
+
+            }
+
         }
         <a href="/ShoppingCart/Order" class="btn btn-primary">Confirm Order</a>
 
@@ -68,3 +91,4 @@
 
     </tfoot>
 </table>
+

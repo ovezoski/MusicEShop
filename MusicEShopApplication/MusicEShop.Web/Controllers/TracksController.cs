@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +18,13 @@ namespace MusicEShop.Web.Controllers
     {
         private readonly ITrackService _trackService;
         private readonly IAlbumService _albumService;
+        private readonly ICartService _cartService;
 
-        public TracksController(ITrackService trackService, IAlbumService albumService)
+        public TracksController(ITrackService trackService, IAlbumService albumService, ICartService cartService)
         {
             this._trackService = trackService;
             _albumService = albumService;
+            _cartService = cartService;
         }
 
         // GET: Tracks
@@ -162,7 +165,36 @@ namespace MusicEShop.Web.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult AddToCart(Guid id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var track = _trackService.GetTrackById(id);
+
+            CartItem ps = new CartItem();
+
+            if (_trackService != null)
+            {
+                ps.TrackId = track.Id;
+            }
+
+            return View(ps);
+        }
+
+        [HttpPost]
+        public IActionResult AddToCartConfirmed(CartItem model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            _cartService.AddToShoppingConfirmed(model, userId);
+
+
+
+            return RedirectToAction(nameof(Index));
+        }
         private bool TrackExists(Guid id)
         {
             return _trackService.GetAllTracks().Any(e => e.Id == id);
