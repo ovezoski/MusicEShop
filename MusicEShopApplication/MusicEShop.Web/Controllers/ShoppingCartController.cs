@@ -21,11 +21,11 @@ namespace MusicEShop.Web.Controllers
             return View(dto);
         }
 
-        public IActionResult DeleteFromShoppingCart(Guid AlbumId)
+        public IActionResult DeleteFromShoppingCart(Guid itemId)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var result = _shoppingCartService.DeleteItemFromShoppingCart(userId,AlbumId);
+            var result = _shoppingCartService.DeleteItemFromShoppingCart(userId,itemId);
             // if(result == 0) -> throw 
             return RedirectToAction("Index", "ShoppingCart");
 
