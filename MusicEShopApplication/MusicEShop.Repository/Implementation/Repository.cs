@@ -51,12 +51,15 @@ namespace MusicEShop.Repository.Implementation
             context.SaveChanges();
         }
 
-        public void Update(T entity)
+         virtual public void Update(T entity)
         {
             if (entity == null)
             {
                 throw new ArgumentNullException("entity");
             }
+
+          
+
             entities.Update(entity);
             context.SaveChanges();
         }
