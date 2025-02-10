@@ -18,6 +18,7 @@ namespace MusicEShop.Service.Implementation
         }
         public List<Order> GetAllOrders()
         {
+
             return _orderRepository.GetAllOrders();
         }
 

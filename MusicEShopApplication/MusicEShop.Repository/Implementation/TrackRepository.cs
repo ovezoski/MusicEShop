@@ -35,5 +35,6 @@ namespace MusicEShop.Repository.Implementation
                     .ThenInclude(a => a.Artist)
                 .SingleOrDefault(t => t.Id == id);
         }
+       
     }
 }

@@ -29,6 +29,7 @@ namespace MusicEShop.Repository.Implementation
                 .Include(o => o.OrderItems!) 
                     .ThenInclude(oi => oi.Album) 
                 .ToList();
+          
         }
 
         public Order? GetDetailsForOrder(BaseEntity id)

@@ -31,15 +31,19 @@ builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ITrackRepository, TrackRepository>();
 
 
-builder.Services.AddScoped <IAlbumService,AlbumService>();
-builder.Services.AddScoped<IArtistService, ArtistService>();
-builder.Services.AddScoped<ICartService, CartService>();
-builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddScoped<IOrderService, OrderService>();
-builder.Services.AddScoped<ITrackService, TrackService>();
+builder.Services.AddTransient <IAlbumService,AlbumService>();
+builder.Services.AddTransient<IArtistService, ArtistService>();
+builder.Services.AddTransient<ICartService, CartService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<ITrackService, TrackService>();
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe")["SecretKey"];
 builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
-builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddTransient<IPaymentService, PaymentService>();
+
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
