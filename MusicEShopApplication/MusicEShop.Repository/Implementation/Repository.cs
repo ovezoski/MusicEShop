@@ -51,18 +51,14 @@ namespace MusicEShop.Repository.Implementation
             context.SaveChanges();
         }
 
-        public void Update(T entity)
+         virtual public void Update(T entity)
         {
             if (entity == null)
             {
                 throw new ArgumentNullException("entity");
             }
 
-            var existingEntity = context.Set<T>().Local.FirstOrDefault(e => e.Id.Equals(entity.Id));
-            if (existingEntity != null)
-            {
-                context.Entry(existingEntity).State = EntityState.Detached;
-            }
+          
 
             entities.Update(entity);
             context.SaveChanges();
