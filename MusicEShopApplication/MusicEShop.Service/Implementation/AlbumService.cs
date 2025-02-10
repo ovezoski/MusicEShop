@@ -47,7 +47,9 @@ namespace MusicEShop.Service.Implementation
 
         public void UpdateAlbum(Album album)
         {
+            
             _albumRepository.Update(album);
+           
         }
     }
 }
