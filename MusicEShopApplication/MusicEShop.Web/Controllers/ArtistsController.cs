@@ -114,8 +114,8 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Name,Country,Genre,ArtistImage,Id")] Artist artist,IFormFile artistImage)
-        { 
+        public IActionResult Edit(Guid id, [Bind("Name,Country,Genre,ArtistImage,Id")] Artist artist)
+        {
             if (id != artist.Id)
             {
                 return NotFound();
@@ -123,28 +123,21 @@ namespace MusicEShop.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                if (artistImage != null && artistImage.Length > 0)
+                try
                 {
-                    string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/artists");
-
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    string uniqueFileName = artist.Name + "-" + Guid.NewGuid().ToString() + Path.GetExtension(artistImage.FileName);
-
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        artistImage.CopyTo(fileStream);
-                    }
-
-                    artist.ArtistImage = "/img/artists/" + uniqueFileName;
+                    _artistService.UpdateArtist(artist);
                 }
-
-                _artistService.UpdateArtist(artist);
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ArtistExists(artist.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(artist);
