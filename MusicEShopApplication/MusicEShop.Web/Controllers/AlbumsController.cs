@@ -26,21 +26,10 @@ namespace MusicEShop.Web.Controllers
             _cartService = cartService;
         }
 
-        //List<Album> GetAllAlbums();
-        //Album GetAlbumById(Guid id);
-        //void CreateAlbum(Album album);
-        //void UpdateAlbum(Album album);
-        //void DeleteAlbum(Guid id);
-        //List<Album> GetAlbumsByArtist(Guid artistId);
-        // GET: Albums
+        
         public IActionResult Index()
         {
             var albums = _albumService.GetAllAlbums();
-            foreach (var album in albums)
-            {
-                album.Artist = _artistService.GetArtistById(album.ArtistId);
-            }
-
             return View(albums);
         }
 
@@ -135,35 +124,45 @@ namespace MusicEShop.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public IActionResult Edit(Guid id, [Bind("Title,Genre,Details,ReleaseDate,Price,CoverImage,ArtistId,Id")] Album album)
+        public IActionResult Edit(Guid id, [Bind("Title,Genre,Details,ReleaseDate,Price,CoverImage,ArtistId,Id")] Album album, IFormFile coverImage)
         {
             if (id != album.Id)
             {
                 return NotFound();
             }
-
             if (ModelState.IsValid)
             {
-                try
+                if (coverImage != null && coverImage.Length > 0)
                 {
-                    _albumService.UpdateAlbum(album);
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!AlbumExists(album.Id))
+                    string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img");
+
+                    if (!Directory.Exists(uploadsFolder))
                     {
-                        return NotFound();
+                        Directory.CreateDirectory(uploadsFolder);
                     }
-                    else
+
+                    string uniqueFileName = album.Title + "-" +
+                        _artistService.GetArtistById(album.ArtistId).Name +
+                        Path.GetExtension(coverImage.FileName);
+
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
-                        throw;
+                        coverImage.CopyTo(fileStream);
                     }
+
+                    album.CoverImage = "/img/" + uniqueFileName;
                 }
+
+                
+                _albumService.UpdateAlbum(album);
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ArtistId"] = new SelectList(_artistService.GetAllArtists(), "Id", "Name", album.ArtistId);
             return View(album);
         }
+
 
         // GET: Albums/Delete/5
         [Authorize(Roles = "Admin")]
@@ -236,7 +235,7 @@ namespace MusicEShop.Web.Controllers
 
 
 
-            return View("Index", _albumService.GetAllAlbums());
+            return RedirectToAction(nameof(Index));
         }
 
 
