@@ -23,7 +23,7 @@ namespace MusicEShop.Repository.Implementation
         {
             return entities
                 .Include(a => a.Artist)
-                .Include(a => a.Tracks!)
+                .Include(a => a.Tracks!).AsNoTracking()
                 .ToList();
         }
 
@@ -31,7 +31,7 @@ namespace MusicEShop.Repository.Implementation
         {
             return entities
                 .Include(a => a.Artist)
-                .Include(a => a.Tracks!)
+                .Include(a => a.Tracks!).AsNoTracking()
                 .SingleOrDefault(a => a.Id == id);
         }
 
@@ -39,9 +39,10 @@ namespace MusicEShop.Repository.Implementation
         {
             return entities
                 .Include(a => a.Artist)  
-                .Include(a => a.Tracks!) 
+                .Include(a => a.Tracks!)
                 .Where(a => a.ArtistId == artistId)
                 .ToList();
         }
+        
     }
 }
