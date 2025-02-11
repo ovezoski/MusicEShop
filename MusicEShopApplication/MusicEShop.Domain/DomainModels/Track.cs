@@ -15,7 +15,6 @@ namespace MusicEShop.Domain.DomainModels
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 
-        // Foreign Key for Album (One-to-Many)
         public Guid AlbumId { get; set; }
         public Album? Album { get; set; }
 
@@ -24,6 +23,9 @@ namespace MusicEShop.Domain.DomainModels
 
         // Many-to-Many: Track ↔ Playlists
         public virtual ICollection<PlaylistTrack>? PlaylistTracks { get; set; }
+
+        public virtual ICollection<OrderItem>? OrderItems { get; set; }
+
 
     }
 }

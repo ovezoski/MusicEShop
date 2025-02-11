@@ -21,7 +21,7 @@ namespace MusicEShop.Repository.Implementation
             entities = context.Set<T>();
         }
 
-        public void Delete(T entity)
+        virtual public void Delete(T entity)
         {
             if (entity == null)
             {

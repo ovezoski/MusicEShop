@@ -59,5 +59,18 @@ namespace MusicEShop.Repository.Implementation
             entities.Update(entity);
             context.SaveChanges();
         }
+
+        public override void Delete(Album album)
+        {
+            if (album is null)
+            {
+                throw new ArgumentNullException(nameof(album));
+            }
+
+
+            entities
+              .Remove(album);
+              
+        }
     }
 }

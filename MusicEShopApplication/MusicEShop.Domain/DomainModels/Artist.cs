@@ -13,11 +13,7 @@ namespace MusicEShop.Domain.DomainModels
         public string? Country { get; set; }
         public string? Genre { get; set; }
         public string? ArtistImage { get; set; }
-
-        // One-to-Many: Artist → Albums
         public  ICollection<Album>? Albums { get; set; }
-
-        // Many-to-Many: Artist ↔ Tracks
         public virtual ICollection<ArtistTrack>? ArtistTracks { get; set; }
     }
 }

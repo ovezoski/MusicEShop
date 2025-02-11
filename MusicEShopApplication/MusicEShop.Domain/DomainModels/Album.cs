@@ -19,13 +19,10 @@ namespace MusicEShop.Domain.DomainModels
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
         public string? CoverImage { get; set; }
-
-        // Foreign Key for Artist (One-to-Many)
         public Guid ArtistId { get; set; }
         public Artist? Artist { get; set; }
-
-        // One-to-Many: Album → Tracks
         public  ICollection<Track>? Tracks { get; set; }
+        public virtual ICollection<OrderItem>? OrderItems { get; set; }
 
     }
 }
