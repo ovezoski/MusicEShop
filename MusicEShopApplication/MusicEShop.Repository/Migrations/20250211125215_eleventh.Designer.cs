@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicEShop.Repository;
 
@@ -11,9 +12,11 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250211125215_eleventh")]
+    partial class eleventh
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -269,7 +272,7 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<Guid?>("AlbumId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CartId")
+                    b.Property<Guid?>("CartId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Quantity")
@@ -321,7 +324,7 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<Guid?>("AlbumId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("OrderId")
+                    b.Property<Guid?>("OrderId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("Price")
@@ -583,9 +586,7 @@ namespace MusicEShop.Repository.Migrations
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Cart", "Cart")
                         .WithMany("CartItems")
-                        .HasForeignKey("CartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CartId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
                         .WithMany("CartItems")
@@ -612,17 +613,15 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany("OrderItems")
+                        .WithMany()
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany("OrderItems")
+                        .WithMany()
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -677,8 +676,6 @@ namespace MusicEShop.Repository.Migrations
                 {
                     b.Navigation("CartItems");
 
-                    b.Navigation("OrderItems");
-
                     b.Navigation("Tracks");
                 });
 
@@ -709,8 +706,6 @@ namespace MusicEShop.Repository.Migrations
                     b.Navigation("ArtistTracks");
 
                     b.Navigation("CartItems");
-
-                    b.Navigation("OrderItems");
 
                     b.Navigation("PlaylistTracks");
                 });

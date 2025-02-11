@@ -76,32 +76,13 @@ namespace MusicEShop.Web.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title,Genre,Details,ReleaseDate,coverImage,Price,ArtistId,Id")] Album album, IFormFile coverImage)
+        public IActionResult Create([Bind("Title,Genre,Details,ReleaseDate,CoverImage,Price,ArtistId,Id")] Album album)
         {
             if (ModelState.IsValid)
             {
                 album.Id = Guid.NewGuid();
 
-                if (coverImage != null && coverImage.Length > 0)
-                {
-                    string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img");
-
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    string uniqueFileName = album.Title+"-"+_artistService.GetArtistById(album.ArtistId).Name + Path.GetExtension(coverImage.FileName);
-
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        coverImage.CopyTo(fileStream);
-                    }
-
-                    album.CoverImage = "/img/" + uniqueFileName;
-                }
+          
                 _albumService.CreateAlbum(album);
 
                 return RedirectToAction(nameof(Index));
