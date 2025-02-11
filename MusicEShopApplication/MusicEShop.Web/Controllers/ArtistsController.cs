@@ -47,6 +47,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Artists/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -94,6 +95,7 @@ namespace MusicEShop.Web.Controllers
 
 
         // GET: Artists/Edit/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(Guid id)
         {
             if (id == null)
@@ -114,6 +116,7 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(Guid id, [Bind("Name,Country,Genre,ArtistImage,Id")] Artist artist,IFormFile artistImage)
         { 
             if (id != artist.Id)
@@ -151,6 +154,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Artists/Delete/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(Guid id)
         {
             if (id == null)

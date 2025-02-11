@@ -588,7 +588,7 @@ namespace MusicEShop.Repository.Migrations
                         .IsRequired();
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany()
+                        .WithMany("CartItems")
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -622,7 +622,7 @@ namespace MusicEShop.Repository.Migrations
                         .IsRequired();
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -703,6 +703,10 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Track", b =>
                 {
                     b.Navigation("ArtistTracks");
+
+                    b.Navigation("CartItems");
+
+                    b.Navigation("OrderItems");
 
                     b.Navigation("PlaylistTracks");
                 });
