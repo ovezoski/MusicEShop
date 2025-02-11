@@ -126,28 +126,21 @@ namespace MusicEShop.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                if (artistImage != null && artistImage.Length > 0)
+                try
                 {
-                    string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/artists");
-
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    string uniqueFileName = artist.Name + "-" + Guid.NewGuid().ToString() + Path.GetExtension(artistImage.FileName);
-
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        artistImage.CopyTo(fileStream);
-                    }
-
-                    artist.ArtistImage = "/img/artists/" + uniqueFileName;
+                    _artistService.UpdateArtist(artist);
                 }
-
-                _artistService.UpdateArtist(artist);
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ArtistExists(artist.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(artist);

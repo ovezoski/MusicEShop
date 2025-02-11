@@ -38,8 +38,8 @@ namespace MusicEShop.Repository.Implementation
         public List<Album> GetAlbumsByArtistId(Guid artistId)
         {
             return entities
-                .Include(a => a.Artist)
-                .Include(a => a.Tracks!)
+                .Include(a => a.Artist)  
+                .Include(a => a.Tracks!) 
                 .Where(a => a.ArtistId == artistId)
                 .ToList();
         }
