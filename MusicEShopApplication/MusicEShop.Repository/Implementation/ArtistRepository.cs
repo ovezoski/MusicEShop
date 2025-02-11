@@ -37,23 +37,6 @@ namespace MusicEShop.Repository.Implementation
                 .SingleOrDefault(a => a.Id == id);
         }
 
-        public override void Update(Artist entity)
-        {
-            if (entity == null)
-            {
-                throw new ArgumentNullException("entity");
-            }
-
-            var existingEntity = context.Set<Artist>().Local.FirstOrDefault(e => e.Id.Equals(entity.Id));
-            if (existingEntity != null)
-            {
-                context.Entry(existingEntity).State = EntityState.Detached;
-            }
-
-            entities.Update(entity);
-            context.SaveChanges();
-        }
-
         //public List<Artist> GetArtistsWithAlbums()
         //{
         //    return context.Artists.Include(a => a.Albums).ToList();

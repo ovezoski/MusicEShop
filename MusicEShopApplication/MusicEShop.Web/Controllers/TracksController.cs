@@ -55,6 +55,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Tracks/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["AlbumId"] = new SelectList(_albumService.GetAllAlbums(), "Id", "Title");
@@ -66,6 +67,7 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create([Bind("Title,Duration,Price,AlbumId,Id")] Track track)
         {
             if (ModelState.IsValid)
@@ -81,6 +83,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Tracks/Edit/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(Guid id)
         {
             if (id == null)
@@ -102,6 +105,7 @@ namespace MusicEShop.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(Guid id, [Bind("Title,Duration,Price,AlbumId,Id")] Track track)
         {
             if (id != track.Id)
@@ -133,6 +137,7 @@ namespace MusicEShop.Web.Controllers
         }
 
         // GET: Tracks/Delete/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(Guid id)
         {
             if (id == null)

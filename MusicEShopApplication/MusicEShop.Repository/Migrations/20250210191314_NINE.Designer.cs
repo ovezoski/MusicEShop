@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicEShop.Repository;
 
@@ -11,9 +12,11 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250210191314_NINE")]
+    partial class NINE
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -612,7 +615,7 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany("OrderItems")
+                        .WithMany()
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
@@ -622,7 +625,7 @@ namespace MusicEShop.Repository.Migrations
                         .IsRequired();
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany("OrderItems")
+                        .WithMany()
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -677,8 +680,6 @@ namespace MusicEShop.Repository.Migrations
                 {
                     b.Navigation("CartItems");
 
-                    b.Navigation("OrderItems");
-
                     b.Navigation("Tracks");
                 });
 
@@ -709,8 +710,6 @@ namespace MusicEShop.Repository.Migrations
                     b.Navigation("ArtistTracks");
 
                     b.Navigation("CartItems");
-
-                    b.Navigation("OrderItems");
 
                     b.Navigation("PlaylistTracks");
                 });

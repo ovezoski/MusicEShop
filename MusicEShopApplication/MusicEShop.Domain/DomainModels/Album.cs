@@ -23,6 +23,7 @@ namespace MusicEShop.Domain.DomainModels
         public Artist? Artist { get; set; }
         public  ICollection<Track>? Tracks { get; set; }
         public virtual ICollection<OrderItem>? OrderItems { get; set; }
+        public virtual ICollection<CartItem>? CartItems { get; set; }
 
     }
 }

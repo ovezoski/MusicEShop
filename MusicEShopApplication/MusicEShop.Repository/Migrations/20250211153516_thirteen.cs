@@ -5,7 +5,7 @@
 namespace MusicEShop.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class Sixth : Migration
+    public partial class thirteen : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -26,7 +26,7 @@ namespace MusicEShop.Service.Implementation
         public void DeleteAlbum(Guid id)
         {
             var album = _albumRepository.GetAlbumById(id);
-            _albumRepository.Delete(album);
+            _albumRepository.DeleteAlbum(album);
         }
 
         public Album GetAlbumById(Guid id)
@@ -47,9 +47,7 @@ namespace MusicEShop.Service.Implementation
 
         public void UpdateAlbum(Album album)
         {
-            
             _albumRepository.Update(album);
-           
         }
     }
 }

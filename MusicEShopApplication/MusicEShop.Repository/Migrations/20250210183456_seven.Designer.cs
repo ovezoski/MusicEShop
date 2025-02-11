@@ -12,8 +12,8 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250209172331_pomospls")]
-    partial class pomospls
+    [Migration("20250210183456_seven")]
+    partial class seven
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -581,7 +581,7 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.CartItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany()
+                        .WithMany("CartItems")
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Cart", "Cart")
@@ -678,6 +678,8 @@ namespace MusicEShop.Repository.Migrations
 
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Album", b =>
                 {
+                    b.Navigation("CartItems");
+
                     b.Navigation("Tracks");
                 });
 
