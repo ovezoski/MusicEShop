@@ -43,5 +43,53 @@ namespace MusicEShop.Repository.Implementation
                 .Where(a => a.ArtistId == artistId)
                 .ToList();
         }
+        public  void DeleteAlbum(Album entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException(nameof(entity));
+            }
+
+            var album = context.Albums
+                .Include(a => a.Tracks)
+                    .ThenInclude(t => t.CartItems)  
+                .Include(a => a.CartItems) 
+                .FirstOrDefault(a => a.Id == entity.Id);
+
+            if (album == null)
+            {
+                throw new ArgumentException("Album not found.");
+            }
+
+            context.CartItems.RemoveRange(album.CartItems);
+
+            foreach (var track in album.Tracks)
+            {
+                context.CartItems.RemoveRange(track.CartItems);
+            }
+
+            context.Tracks.RemoveRange(album.Tracks);
+
+            entities.Remove(album);
+
+            context.SaveChanges();
+        }
+
+        public override void Update(Album entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+
+            var existingEntity = context.Set<Album>().Local.FirstOrDefault(e => e.Id.Equals(entity.Id));
+            if (existingEntity != null)
+            {
+                context.Entry(existingEntity).State = EntityState.Detached;
+            }
+
+            entities.Update(entity);
+            context.SaveChanges();
+        }
     }
 }

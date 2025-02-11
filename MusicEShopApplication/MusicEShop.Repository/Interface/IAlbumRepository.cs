@@ -12,6 +12,6 @@ namespace MusicEShop.Repository.Interface
         List<Album> GetAlbumsByArtistId(System.Guid artistId);
         List<Album> GetAllAlbums();
         Album? GetAlbumById(Guid id);
-
+        void DeleteAlbum(Album entity);
     }
 }

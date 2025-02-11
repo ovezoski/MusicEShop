@@ -26,6 +26,8 @@ namespace MusicEShop.Domain.DomainModels
 
         // One-to-Many: Album → Tracks
         public  ICollection<Track>? Tracks { get; set; }
+        public virtual ICollection<OrderItem>? OrderItems { get; set; }
+        public virtual ICollection<CartItem>? CartItems { get; set; }
 
     }
 }

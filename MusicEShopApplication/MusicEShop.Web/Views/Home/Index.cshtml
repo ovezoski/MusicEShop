@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    
 }
 
-<div class="text-center text-white" style="position: relative; height: 100vh; background: url('/img/shop-bg.jpg') center/cover no-repeat;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.6); padding: 50px; border-radius: 10px;">
+<div class="text-center text-white hero-content">
+    <div class="overlay-content">
         <h1 class="display-4">Welcome to our Music EShop</h1>
         <p class="lead">Your one-stop shop for the best albums and tracks.</p>
-        <a href="@Url.Action("Index", "Albums")" class="btn btn-lg"
-           style="background-color: darkolivegreen; color: white; border: none;">Shop Now</a>
+        <a href="@Url.Action("Index", "Albums")" class="btn btn-lg shop-now-btn">Shop Now</a>
     </div>
 </div>
