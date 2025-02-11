@@ -578,7 +578,7 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.CartItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany()
+                        .WithMany("CartItems")
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Cart", "Cart")
@@ -612,7 +612,7 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
@@ -675,6 +675,10 @@ namespace MusicEShop.Repository.Migrations
 
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Album", b =>
                 {
+                    b.Navigation("CartItems");
+
+                    b.Navigation("OrderItems");
+
                     b.Navigation("Tracks");
                 });
 
