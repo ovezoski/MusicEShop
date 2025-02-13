@@ -4,48 +4,56 @@
     ViewData["Title"] = "Artists";
 }
 
-<h1 class="text-center mt-4">Artists</h1>
-
 <div class="container">
-    <div class="text-center my-3">
+
+<h3 class="mt-4">Artists</h3>
+
+    <div class="my-1">
         @if (User.IsInRole("Admin"))
         {
-            <a class="btn custom-btn" asp-action="Create">Create New Artist</a>
+            <a class="btn custom-btn btn-sm" asp-action="Create">Create New Artist</a>
 
         }
     </div>
 
+    <div class="row">
+
     @for (int i = 0; i < Model.Count(); i++)
     {
         var artist = Model.ElementAt(i);
-        if (i % 4 == 0)
-        {
-            @:<div class="row mb-4">
-        }
 
-        <div class="col-md-3">
-            <div class="card" style="width: 100%; height: auto;">
+        <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
                 <img class="card-img-top" src="@artist.ArtistImage" alt="@artist.Name" style="height: 200px; object-fit: cover;">
+                
                 <div class="card-body">
                     <h5 class="card-title">@artist.Name</h5>
-                    <p class="card-text"><strong>Country:</strong> @artist.Country</p>
-                    <p class="card-text"><strong>Genre:</strong> @artist.Genre</p>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="float-start"> Country </span>
+                                <b class="float-end">  @artist.Country</b>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="float-start"> Genre </span>
+                                <b class="float-end">  @artist.Genre</b>
+                            </li>
+                        </ul>
                 </div>
-                <div class="card-footer">
+                
+                <div class="card-footer gap-1">
                     @if (User.IsInRole("Admin"))
                     {
-                        <a asp-action="Edit" asp-route-id="@artist.Id" class="btn btn-sm" style="background-color: midnightblue; color: white; border: none;">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@artist.Id" class="btn btn-sm " style="background-color: darkred; color: white; border: none;">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@artist.Id" style="background-color: mediumpurple; border: none" class="btn btn-primary flex-grow-1">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@artist.Id" class="btn btn-danger flex-grow-1">Delete</a>
                     }
                     
-                    <a asp-action="Details" asp-route-id="@artist.Id" class="btn btn-sm" style="background-color: darkolivegreen; color: white; border: none;">Details</a>
+                        <a asp-action="Details" asp-route-id="@artist.Id" class="btn btn-primary flex-grow-1" style="background-color: mediumseagreen; border: none">Details</a>
                 </div>
             </div>
         </div>
 
-        if (i % 4 == 3)
-        {
-            @:</div>
-        }
     }
+    </div>
 </div>

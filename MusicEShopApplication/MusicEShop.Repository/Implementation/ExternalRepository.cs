@@ -4,13 +4,12 @@ using MusicEShop.Repository.Interface;
 
 namespace MusicEShop.Repository.Implementation
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class ExternalRepository<T> : IExternalRepository<T> where T : BaseEntity
     {
-        protected readonly ApplicationDbContext context;
+        protected readonly ExternalDbContext context;
         protected DbSet<T> entities;
-        string errorMessage = string.Empty;
 
-        public Repository(ApplicationDbContext context)
+        public ExternalRepository(ExternalDbContext context)
         {
             this.context = context;
             entities = context.Set<T>();
@@ -26,9 +25,10 @@ namespace MusicEShop.Repository.Implementation
             context.SaveChanges();
         }
 
-        public IEnumerable<T> GetAll()
+        public List<T> GetAll()
         {
-            return entities.AsEnumerable();
+            return entities
+                .ToList(); 
         }
 
         public T GetById(Guid? id)
@@ -54,6 +54,11 @@ namespace MusicEShop.Repository.Implementation
             }
             entities.Update(entity);
             context.SaveChanges();
+        }
+
+        IEnumerable<T> IExternalRepository<T>.GetAll()
+        {
+            return entities;
         }
     }
 }

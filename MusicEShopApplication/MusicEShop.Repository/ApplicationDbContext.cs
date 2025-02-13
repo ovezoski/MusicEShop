@@ -23,49 +23,18 @@ namespace MusicEShop.Repository
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<ArtistTrack>()
-                .HasOne(at => at.Artist)
-                .WithMany(a => a.ArtistTracks)
-                .HasForeignKey(at => at.ArtistId)
-                .OnDelete(DeleteBehavior.SetNull);
+               .HasOne(at => at.Artist)
+               .WithMany(a => a.ArtistTracks)
+               .HasForeignKey(at => at.ArtistId)
+               .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<ArtistTrack>()
                 .HasOne(at => at.Track)
                 .WithMany(t => t.ArtistTracks)
                 .HasForeignKey(at => at.TrackId)
-                .OnDelete(DeleteBehavior.SetNull);
-
-            modelBuilder.Entity<Album>(b =>
-            {
-                b.HasMany(a => a.Tracks)
-                    .WithOne(t => t.Album)
-                    .HasForeignKey(t => t.AlbumId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                b.HasMany(a => a.OrderItems)  // Configure cascade delete for OrderItems
-                .WithOne(oi => oi.Album)
-                .HasForeignKey(oi => oi.AlbumId)
-                .OnDelete(DeleteBehavior.Cascade); //
-
-            });
-
-            modelBuilder.Entity<OrderItem>(b =>
-            {
-                b.HasOne(oi => oi.Order)
-                    .WithMany(o => o.OrderItems)
-                    .HasForeignKey(oi => oi.OrderId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                b.HasOne(oi => oi.Track)
-                    .WithMany()
-                    .HasForeignKey(oi => oi.TrackId)
-                    .OnDelete(DeleteBehavior.Cascade); 
-
-            });
-
-
-
-
+                .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
         }

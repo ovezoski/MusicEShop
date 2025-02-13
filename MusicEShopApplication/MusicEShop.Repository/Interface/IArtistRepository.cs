@@ -11,6 +11,5 @@ namespace MusicEShop.Repository.Interface
     {
         List<Artist> GetAllArtists();
         Artist? GetArtistById(Guid id);
-        //List<Artist> GetArtistsWithAlbums();
     }
 }

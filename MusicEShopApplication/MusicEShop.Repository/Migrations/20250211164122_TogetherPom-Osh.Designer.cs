@@ -12,8 +12,8 @@ using MusicEShop.Repository;
 namespace MusicEShop.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250210183456_seven")]
-    partial class seven
+    [Migration("20250211164122_TogetherPom-Osh")]
+    partial class TogetherPomOsh
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -324,7 +324,7 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<Guid?>("AlbumId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("OrderId")
+                    b.Property<Guid?>("OrderId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("Price")
@@ -373,10 +373,10 @@ namespace MusicEShop.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PlaylistId")
+                    b.Property<Guid?>("PlaylistId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("TrackId")
+                    b.Property<Guid?>("TrackId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -591,7 +591,7 @@ namespace MusicEShop.Repository.Migrations
                         .IsRequired();
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany()
+                        .WithMany("CartItems")
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -615,17 +615,15 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.OrderItem", b =>
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Album", "Album")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("TrackId");
 
                     b.Navigation("Album");
@@ -650,15 +648,11 @@ namespace MusicEShop.Repository.Migrations
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Playlist", "Playlist")
                         .WithMany("PlaylistTracks")
-                        .HasForeignKey("PlaylistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PlaylistId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
                         .WithMany("PlaylistTracks")
-                        .HasForeignKey("TrackId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TrackId");
 
                     b.Navigation("Playlist");
 
@@ -679,6 +673,8 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Album", b =>
                 {
                     b.Navigation("CartItems");
+
+                    b.Navigation("OrderItems");
 
                     b.Navigation("Tracks");
                 });
@@ -708,6 +704,10 @@ namespace MusicEShop.Repository.Migrations
             modelBuilder.Entity("MusicEShop.Domain.DomainModels.Track", b =>
                 {
                     b.Navigation("ArtistTracks");
+
+                    b.Navigation("CartItems");
+
+                    b.Navigation("OrderItems");
 
                     b.Navigation("PlaylistTracks");
                 });

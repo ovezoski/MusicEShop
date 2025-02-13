@@ -26,7 +26,6 @@ namespace MusicEShop.Web.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var result = _shoppingCartService.DeleteItemFromShoppingCart(userId,itemId);
-            // if(result == 0) -> throw 
             return RedirectToAction("Index", "ShoppingCart");
 
         }

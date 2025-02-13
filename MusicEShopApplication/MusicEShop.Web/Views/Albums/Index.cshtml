@@ -1,56 +1,83 @@
 ﻿@model IEnumerable<MusicEShop.Domain.DomainModels.Album>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Albums";
 }
 		
-<h1 class="text-center mt-4">Albums</h1>
+<h4 class="m-1 mx-2">Albums</h4>
 
-<div class="container">
-    <div class="text-center my-3">
+    <div class="m-1 mx-2">
         @if (User.IsInRole("Admin"))
         {
-            <a class="btn custom-btn" asp-action="Create">Create New Album</a>
+            <a class="btn custom-btn btn-sm" asp-action="Create">Create New Album</a>
         }
-
     </div>
 
+<div class="container">
+       <div class="row">
     @for (int i = 0; i < Model.Count(); i++)
     {
         var item = Model.ElementAt(i);
-        if (i % 4 == 0)
-        {
-            @:<div class="row mb-4">
-        }
 
-        <div class="col-md-3">
-            <div class="card" style="width: 100%; height: auto;">
+
+        <div class="col-md-3 col-sm-6 col-12">
+            <div class="card">
                 <img class="card-img-top" src="@item.CoverImage" alt="@item.Title" style="height: 200px; object-fit: cover;">
+                
                 <div class="card-body">
+                
                     <h5 class="card-title">@item.Title</h5>
-                    <p class="card-text"><strong>Genre:</strong> @item.Genre</p>
-                    <p class="card-text"><strong>Release Date:</strong> @item.ReleaseDate</p>
-                    <p class="card-text"><strong>Artist:</strong> @item.Artist.Name</p>
-                    <h6><strong>Price:</strong> $@item.Price</h6>
-                </div>
-                <div class="card-footer">
+                    
+                <ul class="list-group list-group-flush">
+                        
+                    <li class="list-group-item"> 
+                        <span class="float-start"> Genre </span> 
+                        <b class="float-end">  @item.Genre</b>
+                    </li>
+                
+                    <li class="list-group-item"> 
+                        <span class="float-start"> Release Date </span> 
+                        <b class="float-end">  @item.ReleaseDate?.ToString("Y") </b>
+                    </li>
+
+                    <li class="list-group-item"> 
+                        <span class="float-start">Artist</span> 
+                        <b class="float-end">  @item.Artist?.Name </b>
+                    </li>
+
+                    
+                    <li class="list-group-item"> 
+                        <span class="float-start">Price</span> 
+                        <b class="float-end">  $@item.Price </b>
+                    </li>
+
+                </ul>
+               
+                <div>
+
+                     <div class="my-1 d-flex gap-1">
                     @if (User.IsInRole("Admin"))
                     {
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm" style="background-color: midnightblue; color: white; border: none;">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm "style="background-color: darkred; color: white; border: none;">Delete</a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-secondary flex-grow-1">Edit</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger  flex-grow-1">Delete</a>
                     }
-                    
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm" style="background-color: darkolivegreen; color: white; border: none;">Details</a>
-                        <a asp-action="AddToCart" asp-route-id="@item.Id" class="btn btn-md" style="background-color: green; color: white; border: none;margin-top: 10px ;">Add to Cart</a>
+
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary  flex-grow-1">Details</a>
+
+                     </div>
+                <div class="d-grid">
+
+                    <a asp-action="AddToCart" asp-route-id="@item.Id" class="btn btn-success btn-sm" >Add to Cart</a>
+                </div>
+                
+            </div>
+
                 </div>
             </div>
         </div>
 
-        if (i % 4 == 3)
-        {
-            @:</div>
-        }
     }
+</div>
 
 
    

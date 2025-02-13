@@ -11,10 +11,16 @@ using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+
+var externalConnectionString = builder.Configuration.GetConnectionString("ExternalDBConnection") ?? throw new InvalidOperationException("Connection string 'ExternalDBConnection' not found.");
+builder.Services.AddDbContext<ExternalDbContext>(options =>
+    options.UseSqlServer(externalConnectionString));
+
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<MusicEShopUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -24,12 +30,19 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+
+builder.Services.AddScoped(typeof(IExternalRepository<>), typeof(ExternalRepository<>));
+
+
+
 builder.Services.AddScoped<IArtistRepository, ArtistRepository>();
 builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ITrackRepository, TrackRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 
 
+builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped <IAlbumService,AlbumService>();
 builder.Services.AddScoped<IArtistService, ArtistService>();
 builder.Services.AddScoped<ICartService, CartService>();
@@ -41,7 +54,6 @@ builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Str
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
@@ -49,7 +61,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -76,7 +87,6 @@ using(var scope = app.Services.CreateScope())
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 }
-//??
 
 using (var scope = app.Services.CreateScope())
 {
@@ -95,7 +105,6 @@ using (var scope = app.Services.CreateScope())
         user.Cart = new Cart();
 
         await userManager.CreateAsync(user, password);
-
         await userManager.AddToRoleAsync(user, "Admin");
     }
 

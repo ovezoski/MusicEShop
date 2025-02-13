@@ -6,12 +6,10 @@
 
 <div class="container mt-4">
     <div class="row">
-        <!-- Artist Image -->
         <div class="col-md-4 text-center">
             <img src="@Model.ArtistImage" alt="Artist Image" class="img-fluid rounded shadow" style="max-width: 100%;">
         </div>
 
-        <!-- Artist Info -->
         <div class="col-md-8">
             <h2 class="mb-3">@Model.Name</h2>
             <p><strong>Country:</strong> @Model.Country</p>
@@ -19,7 +17,6 @@
         </div>
     </div>
 
-    <!-- Artist's Albums Section -->
     <div class="row mt-4">
         <div class="col">
             <h4>Albums</h4>
@@ -54,7 +51,6 @@
         }
     </div>
 
-    <!-- Back & Edit Buttons -->
     <div class="row mt-4">
         <div class="col">
             <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>

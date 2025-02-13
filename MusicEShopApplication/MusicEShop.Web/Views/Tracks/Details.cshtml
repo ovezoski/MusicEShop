@@ -7,7 +7,7 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-4 text-center">
-            <img src="@Model.Album.CoverImage" alt="Track Cover" class="img-fluid rounded shadow" style="max-width: 100%;">
+            <img src="@Model.Album?.CoverImage" alt="Track Cover" class="img-fluid rounded shadow" style="max-width: 100%;">
         </div>
 
         <div class="col-md-8">
@@ -16,7 +16,7 @@
             <p><strong>Price:</strong> $@Model.Price</p>
 
             <form asp-action="AddToCart" asp-route-id="@Model.Id" method="post">
-                <button type="submit" class="btn btn-primary mt-2">
+                <button type="submit" class="btn btn-danger mt-2">
                     <i class="fas fa-cart-plus"></i> Add to Cart
                 </button>
             </form>

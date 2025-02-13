@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MusicEShop.Domain.DomainModels;
-using MusicEShop.Repository;
 using MusicEShop.Service.Interface;
 
 namespace MusicEShop.Web.Controllers
@@ -16,23 +11,17 @@ namespace MusicEShop.Web.Controllers
     [Authorize]
     public class AlbumsController : Controller
     {
+        private readonly IBookingService _bookingService;
         private readonly IAlbumService _albumService;
         private readonly IArtistService _artistService;
         private readonly ICartService _cartService;
-        public AlbumsController(IAlbumService albumService, IArtistService artistService, ICartService cartService)
+        public AlbumsController(IAlbumService albumService, IArtistService artistService, ICartService cartService, IBookingService bookingService)
         {
             _albumService = albumService;
             _artistService = artistService;
             _cartService = cartService;
+            _bookingService = bookingService;
         }
-
-        //List<Album> GetAllAlbums();
-        //Album GetAlbumById(Guid id);
-        //void CreateAlbum(Album album);
-        //void UpdateAlbum(Album album);
-        //void DeleteAlbum(Guid id);
-        //List<Album> GetAlbumsByArtist(Guid artistId);
-        // GET: Albums
         public IActionResult Index()
         {
             var albums = _albumService.GetAllAlbums();
@@ -44,7 +33,13 @@ namespace MusicEShop.Web.Controllers
             return View(albums);
         }
 
-        // GET: Albums/Details/5
+        public  IActionResult External()
+        {
+            var bookings = _bookingService.GetAllBookings();
+           
+
+            return View(bookings);
+        }
         public async Task<IActionResult> Details(Guid id)
         {
             if (id == null)
@@ -62,7 +57,6 @@ namespace MusicEShop.Web.Controllers
             return View(album);
         }
 
-        // GET: Albums/Create
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
@@ -70,9 +64,6 @@ namespace MusicEShop.Web.Controllers
             return View();
         }
 
-        // POST: Albums/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -92,7 +83,6 @@ namespace MusicEShop.Web.Controllers
             return View(album);
         }
 
-        // GET: Albums/Edit/5
         [Authorize(Roles = "Admin")]
         public IActionResult  Edit(Guid id)
         {
@@ -110,9 +100,6 @@ namespace MusicEShop.Web.Controllers
             return View(album);
         }
 
-        // POST: Albums/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -146,7 +133,6 @@ namespace MusicEShop.Web.Controllers
             return View(album);
         }
 
-        // GET: Albums/Delete/5
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(Guid id)
         {
@@ -163,7 +149,6 @@ namespace MusicEShop.Web.Controllers
             return View(album);
         }
 
-        // POST: Albums/Delete/5
         [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -199,6 +184,8 @@ namespace MusicEShop.Web.Controllers
             var album = _albumService.GetAlbumById(id);
 
             CartItem ps = new CartItem();
+
+            ps.Quantity = 1;
 
             if (album != null)
             {

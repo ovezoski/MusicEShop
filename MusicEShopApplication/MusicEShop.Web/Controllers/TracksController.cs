@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -27,7 +23,6 @@ namespace MusicEShop.Web.Controllers
             _cartService = cartService;
         }
 
-        // GET: Tracks
         public IActionResult Index()
         {
 
@@ -37,7 +32,6 @@ namespace MusicEShop.Web.Controllers
             return View(tracks);
         }
 
-        // GET: Tracks/Details/5
         public IActionResult Details(Guid id)
         {
             if (id == null)
@@ -54,7 +48,6 @@ namespace MusicEShop.Web.Controllers
             return View(track);
         }
 
-        // GET: Tracks/Create
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
@@ -62,9 +55,6 @@ namespace MusicEShop.Web.Controllers
             return View();
         }
 
-        // POST: Tracks/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -82,7 +72,6 @@ namespace MusicEShop.Web.Controllers
             return View(track);
         }
 
-        // GET: Tracks/Edit/5
         [Authorize(Roles = "Admin")]
         public IActionResult Edit(Guid id)
         {
@@ -100,9 +89,6 @@ namespace MusicEShop.Web.Controllers
             return View(track);
         }
 
-        // POST: Tracks/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -136,7 +122,6 @@ namespace MusicEShop.Web.Controllers
             return View(track);
         }
 
-        // GET: Tracks/Delete/5
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(Guid id)
         {
@@ -154,7 +139,6 @@ namespace MusicEShop.Web.Controllers
             return View(track);
         }
 
-        // POST: Tracks/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(Guid id)
@@ -177,6 +161,8 @@ namespace MusicEShop.Web.Controllers
             var track = _trackService.GetTrackById(id);
 
             CartItem ps = new CartItem();
+
+            ps.Quantity = 1;
 
             if (_trackService != null)
             {

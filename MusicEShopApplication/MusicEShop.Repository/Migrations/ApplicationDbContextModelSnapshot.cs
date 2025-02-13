@@ -321,7 +321,7 @@ namespace MusicEShop.Repository.Migrations
                     b.Property<Guid?>("AlbumId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("OrderId")
+                    b.Property<Guid?>("OrderId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("Price")
@@ -370,10 +370,10 @@ namespace MusicEShop.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PlaylistId")
+                    b.Property<Guid?>("PlaylistId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("TrackId")
+                    b.Property<Guid?>("TrackId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -617,9 +617,7 @@ namespace MusicEShop.Repository.Migrations
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Order", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
                         .WithMany("OrderItems")
@@ -647,15 +645,11 @@ namespace MusicEShop.Repository.Migrations
                 {
                     b.HasOne("MusicEShop.Domain.DomainModels.Playlist", "Playlist")
                         .WithMany("PlaylistTracks")
-                        .HasForeignKey("PlaylistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PlaylistId");
 
                     b.HasOne("MusicEShop.Domain.DomainModels.Track", "Track")
                         .WithMany("PlaylistTracks")
-                        .HasForeignKey("TrackId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TrackId");
 
                     b.Navigation("Playlist");
 

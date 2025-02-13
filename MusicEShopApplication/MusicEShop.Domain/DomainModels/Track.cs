@@ -26,8 +26,6 @@ namespace MusicEShop.Domain.DomainModels
         public virtual ICollection<OrderItem>? OrderItems { get; set; }
         public virtual ICollection<CartItem>? CartItems { get; set; }
 
-        public virtual ICollection<OrderItem>? OrderItems { get; set; }
-
 
     }
 }

@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MusicEShop.Domain.DomainModels;
 using MusicEShop.Repository.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicEShop.Repository.Implementation
 {
@@ -52,7 +47,7 @@ namespace MusicEShop.Repository.Implementation
 
             var album = context.Albums
                 .Include(a => a.Tracks)
-                    .ThenInclude(t => t.CartItems)  
+                .ThenInclude(t => t.CartItems)  
                 .Include(a => a.CartItems) 
                 .FirstOrDefault(a => a.Id == entity.Id);
 
@@ -99,9 +94,8 @@ namespace MusicEShop.Repository.Implementation
                 throw new ArgumentNullException(nameof(album));
             }
 
-
             entities
-              .Remove(album);
+            .Remove(album);
               
         }
     }

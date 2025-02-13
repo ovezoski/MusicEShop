@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MusicEShop.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class final : Migration
+    public partial class TogetherPomOsh : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -341,7 +341,7 @@ namespace MusicEShop.Repository.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     TrackId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     AlbumId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: false),
@@ -359,8 +359,7 @@ namespace MusicEShop.Repository.Migrations
                         name: "FK_OrderItems_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_OrderItems_Tracks_TrackId",
                         column: x => x.TrackId,
@@ -373,8 +372,8 @@ namespace MusicEShop.Repository.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PlaylistId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TrackId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    PlaylistId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    TrackId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -383,14 +382,12 @@ namespace MusicEShop.Repository.Migrations
                         name: "FK_PlaylistTracks_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
                         principalTable: "Playlists",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_PlaylistTracks_Tracks_TrackId",
                         column: x => x.TrackId,
                         principalTable: "Tracks",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
